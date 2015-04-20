@@ -82,6 +82,7 @@ public class Test extends TestCase
 			assertTrue (f.exists());
 			ImportHelper helper = new ImportHelper(f);
 			Pathway pwy = helper.convertAll();
+			System.out.println(pwy.getDataNodeXrefs().size());
 		}
 	}
 	

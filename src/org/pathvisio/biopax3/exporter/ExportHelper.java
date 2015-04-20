@@ -26,8 +26,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.biopax.paxtools.impl.level3.Level3FactoryImpl;
 import org.biopax.paxtools.io.SimpleIOHandler;
+import org.biopax.paxtools.model.BioPAXFactory;
 import org.biopax.paxtools.model.BioPAXLevel;
 import org.biopax.paxtools.model.Model;
 import org.biopax.paxtools.model.level3.BioSource;
@@ -54,12 +54,12 @@ import org.bridgedb.Xref;
 import org.bridgedb.bio.BioDataSource;
 import org.pathvisio.biopax3.BpStyleSheet;
 import org.pathvisio.core.debug.Logger;
+import org.pathvisio.core.model.GraphLink.GraphRefContainer;
 import org.pathvisio.core.model.GroupStyle;
 import org.pathvisio.core.model.LineType;
 import org.pathvisio.core.model.ObjectType;
 import org.pathvisio.core.model.Pathway;
 import org.pathvisio.core.model.PathwayElement;
-import org.pathvisio.core.model.GraphLink.GraphRefContainer;
 import org.pathvisio.core.model.PathwayElement.Comment;
 import org.pathvisio.core.model.PathwayElement.MAnchor;
 import org.pathvisio.core.model.PathwayElement.MPoint;
@@ -112,7 +112,7 @@ public class ExportHelper
 		}
 	}
 
-	private Level3FactoryImpl factory;
+	private BioPAXFactory factory;
 	private Model bpModel;
 	private int nextId = 1;
 	private SimpleIOHandler exporter = new SimpleIOHandler(BioPAXLevel.L3);
@@ -132,7 +132,8 @@ public class ExportHelper
 		this.pvPwy = pvPwy;
 		System.out.println(" Saving from GPML to Biopax");
 
-		factory = new Level3FactoryImpl();
+		
+		factory = BioPAXLevel.L3.getDefaultFactory();
 		bpModel = factory.createModel();
 
 		mapPathway();
@@ -254,6 +255,7 @@ public class ExportHelper
 		BiopaxEntityType eltType = BiopaxEntityType.getFromElement(pwyElt);
 		
 		boolean unification = false;
+			
 		switch (eltType)
 		{
 		case PROTEIN:
@@ -454,6 +456,8 @@ public class ExportHelper
 		}
 
 		BiochemicalReaction reaction = bpModel.addNew (BiochemicalReaction.class, generateRdfId());
+		reaction.setDisplayName(generateRdfId());
+		
 		for (PhysicalEntity i : leftPe) reaction.addLeft(i);
 		for (PhysicalEntity i : rightPe) reaction.addRight(i);
 

@@ -2,12 +2,12 @@ package org.pathvisio.biopax3.bots;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.rmi.RemoteException;
-import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -24,9 +24,8 @@ import org.biopax.validator.jaxb.ValidatorResponse;
 import org.pathvisio.biopax3.BiopaxFormat;
 import org.pathvisio.core.model.ConverterException;
 import org.pathvisio.core.model.Pathway;
-import org.pathvisio.wikipathways.webservice.WSPathwayInfo;
 import org.pathvisio.wikipathways.webservice.WSPathway;
-import org.wikipathways.client.WikiPathwaysCache;
+import org.pathvisio.wikipathways.webservice.WSPathwayInfo;
 import org.wikipathways.client.WikiPathwaysClient;
 
 
@@ -131,9 +130,9 @@ public class WikipathwaysBiopaxValidator
 	final BiopaxValidatorClient bpValidator;
 	ValidationResultSet results;
 	
-	public WikipathwaysBiopaxValidator() throws ServiceException
+	public WikipathwaysBiopaxValidator() throws ServiceException, MalformedURLException
 	{
-		client = new WikiPathwaysClient();
+		client = new WikiPathwaysClient(new URL("http://webservice.wikipathways.org"));
 		format = new BiopaxFormat();
 		bpValidator = new BiopaxValidatorClient();
 	}	

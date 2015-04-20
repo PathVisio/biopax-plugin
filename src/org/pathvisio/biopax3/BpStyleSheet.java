@@ -1,8 +1,6 @@
 package org.pathvisio.biopax3;
 
-import java.awt.Point;
 import java.awt.geom.Point2D;
-import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.HashMap;
@@ -114,12 +112,12 @@ public class BpStyleSheet
 			throw new IOException ("Wrong file format");
 		}
 
-		for (Object o : root.getChildren(COORD_TAG))
-		{
-			Element coord = (Element)o;
-			String key = coord.getAttributeValue(ATTR_ID);
-			double x = Double.parseDouble(coord.getAttributeValue(ATTR_X));
-			double y = Double.parseDouble(coord.getAttributeValue(ATTR_Y));
-		}
+//		for (Object o : root.getChildren(COORD_TAG))
+//		{
+//			Element coord = (Element)o;
+//			String key = coord.getAttributeValue(ATTR_ID);
+//			double x = Double.parseDouble(coord.getAttributeValue(ATTR_X));
+//			double y = Double.parseDouble(coord.getAttributeValue(ATTR_Y));
+//		}
 	}
 }

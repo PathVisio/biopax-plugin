@@ -1,16 +1,14 @@
 package org.pathvisio.biopax3.bots;
 
-import java.io.BufferedWriter;
-import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.rmi.RemoteException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import javax.xml.rpc.ServiceException;
 
-import org.biopax.validator.BiopaxValidatorClient;
 import org.pathvisio.biopax3.BiopaxFormat;
 import org.pathvisio.core.model.ConverterException;
 import org.pathvisio.core.model.Pathway;
@@ -27,9 +25,9 @@ public class WikipathwaysExerciser
 	final WikiPathwaysClient client;
 	final BiopaxFormat bpFormat;
 	
-	public WikipathwaysExerciser() throws ServiceException
+	public WikipathwaysExerciser() throws ServiceException, MalformedURLException
 	{
-		client = new WikiPathwaysClient();
+		client = new WikiPathwaysClient(new URL("http://webservice.wikipathways.org"));
 		bpFormat = new BiopaxFormat();
 	}
 
@@ -73,6 +71,7 @@ public class WikipathwaysExerciser
 		writer.close();
 		
 		Pathway pwy = bpFormat.doImport(tmpFile);
+		System.out.println(pwy.getDataNodeXrefs().size());
 	}
 	
 	public static void main(String [] args) throws IOException, ServiceException

@@ -3,6 +3,8 @@ package org.pathvisio.biopax3;
 import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 import javax.xml.bind.JAXBException;
 import javax.xml.rpc.ServiceException;
@@ -43,9 +45,9 @@ public class WikipathwaysBiopaxValidator
 	final BiopaxFormat format;
 	final BiopaxValidatorClient bpValidator;
 	
-	public WikipathwaysBiopaxValidator() throws ServiceException
+	public WikipathwaysBiopaxValidator() throws ServiceException, MalformedURLException
 	{
-		client = new WikiPathwaysClient();
+		client = new WikiPathwaysClient(new URL("http://webservice.wikipathways.org"));
 		format = new BiopaxFormat();
 		bpValidator = new BiopaxValidatorClient();
 	}
