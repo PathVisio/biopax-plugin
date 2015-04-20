@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<project name="org.pathvisio.biopax3" default="install" basedir="." xmlns:ivy="antlib:org.apache.ivy.ant">
+
+  <property name="pathvisio.dir" value="../../common-bundles/trunk/"/>
+  <property name="common.bundles" value="../../common-bundles/trunk"/>
+  
+  	<path id="project.class.path">
+		<fileset dir="${pathvisio.dir}/modules">
+			<include name="org.pathvisio.core.jar"/>
+			<include name="org.pathvisio.gui.jar"/>
+			<include name="org.pathvisio.desktop.jar"/>
+		</fileset>
+		<fileset dir="lib">
+			<include name="paxtools*.jar"/>
+		</fileset>
+		<fileset dir="${pathvisio.dir}/lib">
+			<include name="*jdom*.jar"/>
+			<include name="felix*.jar"/>
+			<include name="org.bridgedb.jar"/>
+			<include name="org.bridgedb.bio.jar"/>
+		</fileset>
+		<fileset dir="${common.bundles}">
+			<include name="*google.collect*.jar"/>
+		</fileset>
+	</path>
+
+	<path id="test.class.path">
+		<fileset dir="${pathvisio.dir}/modules">
+			<include name="org.wikipathways.client.jar"/>
+		</fileset>
+		<fileset dir="${pathvisio.dir}/lib">
+			<include name="org.junit*.jar"/>
+		</fileset>
+		<fileset dir="${common.bundles}">
+			<include name="nl.helixsoft.util.xml*.jar"/>
+			<!--use com.springsource.javax.xml.rpc.jar which contains class files-->
+			<include name="com.springsource.javax.xml.rpc*.jar"/>
+		</fileset>	
+	</path>
+
+	<import file="${common.bundles}/plugin-common.xml" />
+
+	<target name="prepare">
+		<unjar dest="build/classes">
+        <fileset dir="lib">
+            <include name="paxtools*.jar" />
+        </fileset>    
+    	</unjar>
+	</target>
+
+	<target name="install" depends="jar">
+		<copy todir="${bundle.dest}">
+			<fileset dir="${common.bundles}">
+				<include name="*google.collect*.jar"/>
+			</fileset>
+  		</copy>	
+	</target>
+
+	<target name="test" depends="compile">
+		<javac srcdir="test" debug="true" 
+					destdir="build/classes"
+					source="1.5">
+			<classpath>
+				<path refid="test.class.path"/>
+				<path refid="project.class.path"/>
+			</classpath>
+		</javac>
+		<junit printsummary="on" haltonfailure="true" fork="true" dir=".">
+			<formatter type="brief" usefile="false"/>
+			<classpath>
+				<pathelement path="build/classes"/>
+				<path refid="project.class.path"/>
+				<path refid="test.class.path"/>
+			</classpath>
+			<batchtest>
+				<fileset dir="test">
+					<include name="**/*Test*.java"/>
+				</fileset>
+			</batchtest>
+		</junit>
+	</target>  
+  
+  <target name="webstart" depends="jar">
+	<fail message="You must specify a keystore password for opening visioKeyStore: ant -Dkeystore.password=***** [ant target]">
+		<condition>
+			<not> <isset property="keystore.password"/> </not>
+		</condition>
+	</fail>
+  	<mkdir dir="${webstart.dir}"/>
+  	<copy file="${jar.name}" todir="${webstart.dir}"/>
+  	<copy todir="${webstart.dir}">
+		<fileset dir="${pathvisio.dir}">
+  			<include name="pathvisio.jar"/>
+			<include name="lib/**/*.jar"/>
+		</fileset>
+  	</copy>
+  	<copy todir="${webstart.dir}/lib">
+		<fileset dir="lib">
+			<include name="**/*.jar"/>
+		</fileset>
+  	</copy>
+	<copy todir="${webstart.dir}" file="Biopax3GPML.jnlp"/>
+    <signjar alias="PV" lazy = "true" 
+		storepass="${keystore.password}" keystore="${pathvisio.dir}/lib/visioKeyStore">
+		<fileset dir="${webstart.dir}" includes="**/*.jar"/>
+	</signjar>
+  </target>
+
+</project>

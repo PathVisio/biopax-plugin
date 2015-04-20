@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: BioPAX plugin
+Bundle-SymbolicName: org.pathvisio.biopax3;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.pathvisio.biopax3.Activator
+Export-Package: org.pathvisio.biopax3
+Require-Bundle: org.pathvisio.core;bundle-version="3.0.0",
+ com.springsource.org.jdom;bundle-version="1.1.0",
+ org.bridgedb;bundle-version="1.1.0",
+ org.pathvisio.desktop;bundle-version="3.0.0",
+ org.pathvisio.gui;bundle-version="3.0.0",
+ org.bridgedb.bio;bundle-version="1.1.0",
+ com.google.collect;bundle-version="1.0.0",
+ nl.helixsoft.util.xml;bundle-version="1.0.0";resolution:=optional,
+ org.wikipathways.client;bundle-version="3.0.0";resolution:=optional,
+ javax.xml.rpc;bundle-version="1.1.0";resolution:=optional,
+ org.junit;bundle-version="4.10.0";resolution:=optional
+Import-Package: org.osgi.framework;version="1.5.0"

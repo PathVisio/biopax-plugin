@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://genmapp.org/GPML/2010a" Name="Complex test" Version="20100728" Organism="Homo sapiens">
+  <Graphics BoardWidth="130.9" BoardHeight="104.5" />
+  <DataNode TextLabel="P53" GraphId="e6f15" Type="Protein" GroupRef="e7533">
+    <Graphics CenterX="71.0" CenterY="57.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="Uniprot/TrEMBL" ID="P04637" />
+  </DataNode>
+  <DataNode TextLabel="MDM2" GraphId="d6d1a" Type="Protein" GroupRef="e7533">
+    <Graphics CenterX="71.0" CenterY="77.0" Width="80.0" Height="20.0" ZOrder="32768" FontSize="10" Valign="Middle" />
+    <Xref Database="Uniprot/TrEMBL" ID="Q00987" />
+  </DataNode>
+  <Group GroupId="e7533" Style="Complex" />
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+</Pathway>
+

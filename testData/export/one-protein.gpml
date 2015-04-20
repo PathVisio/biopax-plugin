@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://genmapp.org/GPML/2008a" Name="One-entity pathway" Version="20091118" Organism="Homo sapiens">
+  <Comment>This is a tiny pathway, made just for the purpose of testing the BioPAX level 3 converter</Comment>
+  <Graphics BoardWidth="2046.0" BoardHeight="1369.5" WindowWidth="18000.0" WindowHeight="12000.0" />
+  <DataNode TextLabel="INSR" Type="GeneProduct" GraphId="b6186">
+    <Comment>The goo balls finally found their destiny -- the sign painter</Comment>
+    <Comment>The cake is a lie!</Comment>
+    <Graphics Color="000000" CenterX="1260.0" CenterY="1095.0" Width="1200.0" Height="300.0" ZOrder="32768" />
+    <Xref Database="Entrez Gene" ID="3643" />
+  </DataNode>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+</Pathway>
+

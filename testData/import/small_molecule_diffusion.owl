@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+    xmlns:xsp="http://www.owl-ontologies.com/2005/08/07/xsp.owl#"
+    xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+    xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="file:/home/martijn/Desktop/biopax-export-test1.owl">
+  <owl:Ontology rdf:about="file:/home/martijn/Desktop/biopax-export-test1.owl">
+    <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl#"/>
+  </owl:Ontology>
+  <bp:Pathway rdf:about="file:/home/martijn/Desktop/pathway_c4b1d">
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Diffusion of small molecule between two cellular locations</bp:displayName>
+    <bp:organism>
+      <bp:BioSource rdf:about="file:/home/martijn/Desktop/organism_c4b1d">
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+        >Homo sapiens</bp:standardName>
+      </bp:BioSource>
+    </bp:organism>
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >This is a tiny pathway, made just for the purpose of testing the BioPAX level 3 converter</bp:comment>
+  </bp:Pathway>
+  <bp:Transport rdf:ID="Transport_4">
+    <bp:left>
+      <bp:SmallMolecule rdf:ID="SmallMolecule_2">
+        <bp:cellularLocation>
+          <bp:CellularLocationVocabulary rdf:ID="glucose_extracellular">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Extracellular space</bp:term>
+          </bp:CellularLocationVocabulary>
+        </bp:cellularLocation>
+        <bp:entityReference>
+          <bp:SmallMoleculeReference rdf:ID="glucose_entityref">
+            <bp:xref>
+              <bp:UnificationXref rdf:about="file:/home/martijn/Desktop/glucose_xref">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >HMDB</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+                >HMDB00122</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:chemicalFormula rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >C6H12O6</bp:chemicalFormula>
+            <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Glucose</bp:displayName>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >D-Glucose</bp:standardName>
+          </bp:SmallMoleculeReference>
+        </bp:entityReference>
+      </bp:SmallMolecule>
+    </bp:left>
+    <bp:right>
+      <bp:SmallMolecule rdf:about="file:/home/martijn/Desktop/glucose_cytoplasm">
+        <bp:cellularLocation>
+          <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary_2">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+            >Cytoplasm</bp:term>
+          </bp:CellularLocationVocabulary>
+        </bp:cellularLocation>
+        <bp:entityReference rdf:resource="file:/home/martijn/Desktop/biopax-export-test1.owl#glucose_entityref"/>
+      </bp:SmallMolecule>
+    </bp:right>
+    <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Glucose Diffusion</bp:displayName>
+    <bp:spontaneous rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</bp:spontaneous>
+  </bp:Transport>
+</rdf:RDF>
+
+<!-- Created with Protege (with OWL Plugin 3.4.1, Build 536)  http://protege.stanford.edu -->

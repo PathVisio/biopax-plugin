@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pathway xmlns="http://genmapp.org/GPML/2008a" Name="One-entity pathway" Version="20091118" Organism="Homo sapiens">
+  <Graphics BoardWidth="1831.5" BoardHeight="1270.5" WindowWidth="18000.0" WindowHeight="12000.0" />
+  <DataNode TextLabel="Ethanol" Type="Metabolite" GraphId="f1884">
+    <Graphics Color="0000ff" CenterX="1065.0" CenterY="1005.0" Width="1200.0" Height="300.0" ZOrder="32768" />
+    <Xref Database="HMDB" ID="HMDB00108" />
+  </DataNode>
+  <InfoBox CenterX="0.0" CenterY="0.0" />
+</Pathway>
+
