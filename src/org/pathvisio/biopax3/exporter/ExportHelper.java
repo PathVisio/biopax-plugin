@@ -189,6 +189,7 @@ public class ExportHelper
 			bpEr = uniqueEntityRef.get (key);
 		}
 
+		bpEr.setDisplayName(pwyElt.getTextLabel().replace("\n", ""));
 		bpPe.setEntityReference(bpEr);
 	}
 
@@ -256,10 +257,12 @@ public class ExportHelper
 		
 		boolean unification = false;
 			
+		// TODO: add mapping to UniProt / ChEBI
+		// TODO: add HGNC symbol as relationship xref for gene products / proteins
 		switch (eltType)
 		{
 		case PROTEIN:
-			if (xrefType.equalsIgnoreCase("protein")) unification = true;
+			if (xrefType.equalsIgnoreCase("protein") || xrefType.equalsIgnoreCase("gene")) unification = true;
 			break;
 		case RNA:
 			if (xrefType.equalsIgnoreCase("rna")) unification = true;
@@ -455,8 +458,9 @@ public class ExportHelper
 			}
 		}
 
-		BiochemicalReaction reaction = bpModel.addNew (BiochemicalReaction.class, generateRdfId());
-		reaction.setDisplayName(generateRdfId());
+		String rdfbiochem = generateRdfId();
+		BiochemicalReaction reaction = bpModel.addNew (BiochemicalReaction.class, rdfbiochem);
+		reaction.setDisplayName("BiochemicalReaction " + rdfbiochem);
 		
 		for (PhysicalEntity i : leftPe) reaction.addLeft(i);
 		for (PhysicalEntity i : rightPe) reaction.addRight(i);
@@ -475,9 +479,11 @@ public class ExportHelper
 					// but usually these are alternatives that are not required at the same time.
 					// this constitutes an OR relationship, thus we need 
 					// a separate Catalysis instance for each enzyme. 
-					Catalysis catalysis = bpModel.addNew (Catalysis.class, generateRdfId());
+					String rdf = generateRdfId();
+					Catalysis catalysis = bpModel.addNew (Catalysis.class, rdf);
 					catalysis.addController(pe);
 					catalysis.addControlled(reaction);
+					catalysis.setDisplayName("Catalysis " + rdf);
 					bpPwy.addPathwayComponent(catalysis);
 				}
 			}
@@ -496,6 +502,7 @@ public class ExportHelper
 		{
 			organism = bpModel.addNew (BioSource.class, generateRdfId());
 			organism.setStandardName(info.getOrganism());
+			organism.setDisplayName(info.getOrganism());
 			bpPwy.setOrganism(organism);
 		}
 
