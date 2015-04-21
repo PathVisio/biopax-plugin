@@ -64,10 +64,6 @@ public class WikipathwaysBiopaxValidator
 		
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		bpValidator.validate(false, "strict", RetFormat.XML, null, null, null,  new File[] { tempFile }, baos);
-//		bpValidator.validate(
-//				false, false, 
-//				RetFormat.XML, null, 
-//				null, new File[] { tempFile }, baos);
 		
 		String data = baos.toString("UTF-8"); // TODO: not sure about encoding
 		ValidatorResponse resp = BiopaxValidatorClient.unmarshal(data);

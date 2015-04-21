@@ -25,7 +25,6 @@ import org.biopax.paxtools.model.level3.EntityReference;
 import org.biopax.paxtools.model.level3.SimplePhysicalEntity;
 import org.bridgedb.DataSource;
 import org.bridgedb.Xref;
-import org.bridgedb.bio.BioDataSource;
 import org.pathvisio.core.model.PathwayElement;
 
 public class DefaultXrefMapper implements XrefMapper 
@@ -35,7 +34,7 @@ public class DefaultXrefMapper implements XrefMapper
 		for(org.biopax.paxtools.model.level3.Xref xref : e.getXref()) {
 			Xref gpmlXref = getDataNodeXref(xref);
 			if(gpmlXref != null) {
-				pwElm.setGeneID(gpmlXref.getId());
+				pwElm.setElementID(gpmlXref.getId());
 				pwElm.setDataSource(gpmlXref.getDataSource());
 				break; //Stop after first valid xref
 			}
@@ -49,7 +48,7 @@ public class DefaultXrefMapper implements XrefMapper
 			{
 				Xref gpmlXref = getDataNodeXref(xref);
 				if(gpmlXref != null) {
-					pwElm.setGeneID(gpmlXref.getId());
+					pwElm.setElementID(gpmlXref.getId());
 					pwElm.setDataSource(gpmlXref.getDataSource());
 					break; //Stop after first valid xref
 				}				
@@ -61,10 +60,10 @@ public class DefaultXrefMapper implements XrefMapper
 	static 
 	{
 		dsMap = new HashMap<String, DataSource>();
-		dsMap.put ("uniprot", BioDataSource.UNIPROT);
-		dsMap.put ("UniProt", BioDataSource.UNIPROT);
-		dsMap.put ("kegg compound", BioDataSource.KEGG_COMPOUND);
-		dsMap.put ("KEGG compound", BioDataSource.KEGG_COMPOUND);
+		dsMap.put ("uniprot", DataSource.getBySystemCode("S"));
+		dsMap.put ("UniProt", DataSource.getBySystemCode("S"));
+		dsMap.put ("kegg compound", DataSource.getBySystemCode("Ck"));
+		dsMap.put ("KEGG compound", DataSource.getBySystemCode("Ck"));
 	}
 	
 	

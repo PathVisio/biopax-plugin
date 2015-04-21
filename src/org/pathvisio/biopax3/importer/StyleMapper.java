@@ -17,10 +17,9 @@
 
 package org.pathvisio.biopax3.importer;
 
-import org.biopax.paxtools.model.level3.Entity;
-import org.biopax.paxtools.model.level3.PhysicalEntity;
 import org.biopax.paxtools.model.level3.Control;
 import org.biopax.paxtools.model.level3.Conversion;
+import org.biopax.paxtools.model.level3.Entity;
 import org.pathvisio.core.model.PathwayElement;
 
 /**

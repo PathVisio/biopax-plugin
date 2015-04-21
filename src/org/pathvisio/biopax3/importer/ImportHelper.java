@@ -223,7 +223,7 @@ public class ImportHelper {
 		Element e = rdfid2element.get(rdfId);
 		if(e != null) {
 			try {
-				gpmlPathway.getBiopaxElementManager().addPassiveElement(e);
+				gpmlPathway.getBiopax().addPassiveElement(e);
 			} catch (Exception ex) {
 				Logger.log.error("Unable to create BiopaxElement", ex);
 			}

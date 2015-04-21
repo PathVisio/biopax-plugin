@@ -55,7 +55,6 @@ public class DefaultStyleMapper implements StyleMapper {
 			case INHIBITION_UNCOMPETITIVE:
 			case INHIBITION_UNKMECH:
 				line.setEndLineType(LineType.TBAR);
-				
 				break;
 			}
 		}
