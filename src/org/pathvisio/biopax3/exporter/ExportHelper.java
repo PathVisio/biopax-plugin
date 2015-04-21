@@ -51,7 +51,6 @@ import org.biopax.paxtools.model.level3.SmallMoleculeReference;
 import org.biopax.paxtools.model.level3.UnificationXref;
 import org.bridgedb.DataSource;
 import org.bridgedb.Xref;
-import org.bridgedb.bio.BioDataSource;
 import org.pathvisio.biopax3.BpStyleSheet;
 import org.pathvisio.core.debug.Logger;
 import org.pathvisio.core.model.GraphLink.GraphRefContainer;
@@ -152,7 +151,7 @@ public class ExportHelper
 		// otherwise, we create a new EntityReference each time.
 		Object key;
 		if (pwyElt.getObjectType() == ObjectType.DATANODE && pwyElt.getDataSource() != null &&
-				pwyElt.getGeneID() != null) key = pwyElt.getXref(); 
+				pwyElt.getElementID() != null) key = pwyElt.getXref(); 
 		else key = pwyElt;
 		
 		EntityReference bpEr = null;
@@ -284,7 +283,7 @@ public class ExportHelper
 	
 	static 
 	{
-		miriamNameOverrides.put(BioDataSource.UNIPROT, "Uniprot");
+		miriamNameOverrides.put(DataSource.getBySystemCode("S"), "Uniprot");
 	}
 	
 	/** 
@@ -344,7 +343,9 @@ public class ExportHelper
 	
 	private Complex createComplex(PathwayElement pwyElt)
 	{
-		Complex bpPe = bpModel.addNew(Complex.class, generateRdfId());
+		String rdf = generateRdfId();
+		Complex bpPe = bpModel.addNew(Complex.class, rdf);
+		bpPe.setDisplayName("Complex " + rdf);
 		for (PathwayElement subElt : pwyElt.getParent().getGroupElements(pwyElt.getGroupId()))
 		{
 			PhysicalEntity bpSub = createOrGetPhysicalEntity(subElt);

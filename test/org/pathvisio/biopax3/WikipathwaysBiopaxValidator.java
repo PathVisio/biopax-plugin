@@ -57,7 +57,8 @@ public class WikipathwaysBiopaxValidator
 		WSPathway wpwy = client.getPathway(id);
 		Pathway pwy = WikiPathwaysClient.toPathway(wpwy);
 		
-		File tempFile = File.createTempFile("biopaxTest.", ".owl");
+//		File tempFile = File.createTempFile("biopaxTest.", ".owl");
+		File tempFile = new File("biopaxTest.owl");
 		format.doExport(tempFile, pwy);
 		
 		System.out.println ("Writing to temp file: " + tempFile);
