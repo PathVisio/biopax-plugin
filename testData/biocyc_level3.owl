@@ -1,0 +1,1672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:base="http://BioCyc.org/META/pathway-biopax?type=3%38object=PWY-401" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xs="http://www.w3.org/2001/XMLSchema#" xmlns:bp="http://www.biopax.org/release/biopax-level3.owl#">
+ <owl:Ontology rdf:about="">
+    <owl:imports rdf:resource="http://www.biopax.org/release/biopax-level3.owl"/>
+ <rdfs:comment>This%32BioPAX%32Level%323%32output%32for%32organism%32MetaCyc%44%32pathway%32glycolipid%3732biosynthesis%10was%32automatically%32generated%32from%32URL%32http%58%47%47BioCyc%46org%47META%47pathway%45biopax%63type%613%3738object%61PWY%45401%32on%3225%45Jun%452009%32%3205%5833%5818%46%32%32Note%32that%32all%32IDs%32are%32auto%45generated%44%10and%32are%32valid%32in%32the%32scope%32of%32this%32file%32only%46%32%32If%32the%32data%32is%32regenerated%32at%32some%32later%10time%44%32or%32data%32for%32another%32pathway%32is%32generated%32from%32this%32same%32site%44%32there%32are%32no%32%10guarantees%32that%32the%32same%32IDs%32will%32refer%32to%32the%32same%32objects%46%32%32To%32retrieve%32a%32file%32%10containing%32a%32complete%32list%32of%32pathways%32for%32this%32organism%32in%32BioPAX%32format%44%32please%10visit%32http%58%47%47biocyc%46org%47download%45flatfiles%46shtml</rdfs:comment>
+ </owl:Ontology>
+  <bp:Catalysis rdf:ID="Catalysis30124">
+    <bp:controlled>
+      <bp:BiochemicalReaction rdf:ID="BiochemicalReaction30102">
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-&amp;beta;-D-Galactosyl-1,2-diacylglycerol (monogalactosyldiacylglycerol, MGDG, MGD) is the most abundant chloroplast membrane lipid. There are three known isozymes catalyze the biosynthesis of MGDG in Arabidopsis. MGD1 is the predominate MGDG synthase and it synthesizes both prokaryotic and eukaryotic MGDG with no substrate preference. Whereas MGD2 and MGD3 have higher affinity for eukaryotic diacylglycerol (DAG).</bp:comment>
+        <bp:eCNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4.1.46</bp:eCNumber>
+        <bp:left>
+          <bp:SmallMolecule rdf:ID="SmallMolecule30013">
+            <bp:cellularLocation>
+              <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary29993">
+                <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008372</bp:term>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref29994">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008372</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+              </bp:CellularLocationVocabulary>
+            </bp:cellularLocation>
+            <bp:entityReference>
+              <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30010">
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30011">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DIACYLGLYCEROL</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D-1,2-Diacylglycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,2-diacyl-SN-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,2-diasylglycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a D-1,2-diacylglycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAG</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 1,2-diacylglycerol</bp:standardName>
+                <bp:structure>
+                  <bp:ChemicalStructure rdf:ID="ChemicalStructure30012">
+                    <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="DIACYLGLYCEROL" title="a 1,2-diacylglycerol" dictRef="dictDIACYLGLYCEROL"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom1" elementType="O" x2="2143.0" y2="-1238.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom2" elementType="O" x2="714.0" y2="-2888.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom3" elementType="O" x2="0.0" y2="-2475.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom4" elementType="R1" x2="2858.0" y2="0.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom5" elementType="R2" x2="2143.0" y2="-2888.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom6" elementType="C" x2="0.0" y2="-1650.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom7" elementType="C" x2="714.0" y2="-412.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom8" elementType="O" x2="1429.0" y2="0.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom9" elementType="O" x2="1429.0" y2="-1650.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom10" elementType="C" x2="2143.0" y2="-412.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom11" elementType="C" x2="1429.0" y2="-2475.0"/&gt;
+    &lt;atom id="DIACYLGLYCEROL-atom12" elementType="C" x2="714.0" y2="-1238.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond1" atomRefs="DIACYLGLYCEROL-atom1 DIACYLGLYCEROL-atom10" order="2"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond2" atomRefs="DIACYLGLYCEROL-atom2 DIACYLGLYCEROL-atom11" order="2"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond3" atomRefs="DIACYLGLYCEROL-atom3 DIACYLGLYCEROL-atom6" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond4" atomRefs="DIACYLGLYCEROL-atom4 DIACYLGLYCEROL-atom10" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond5" atomRefs="DIACYLGLYCEROL-atom5 DIACYLGLYCEROL-atom11" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond6" atomRefs="DIACYLGLYCEROL-atom6 DIACYLGLYCEROL-atom12" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond7" atomRefs="DIACYLGLYCEROL-atom7 DIACYLGLYCEROL-atom8" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond8" atomRefs="DIACYLGLYCEROL-atom7 DIACYLGLYCEROL-atom12" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond9" atomRefs="DIACYLGLYCEROL-atom8 DIACYLGLYCEROL-atom10" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond10" atomRefs="DIACYLGLYCEROL-atom9 DIACYLGLYCEROL-atom11" order="1"/&gt;
+    &lt;bond id="DIACYLGLYCEROL-bond11" atomRefs="DIACYLGLYCEROL-atom12 DIACYLGLYCEROL-atom9" order="1"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 5 H 6 O 5 R1 1 R2 1" formalCharge="0"/&gt;
+   &lt;string title="smiles"&gt;C(C(OC([R2])=O)COC([R1])=O)O&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                    <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                  </bp:ChemicalStructure>
+                </bp:structure>
+              </bp:SmallMoleculeReference>
+            </bp:entityReference>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D-1,2-Diacylglycerol</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,2-diacyl-SN-glycerol</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,2-diasylglycerol</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a D-1,2-diacylglycerol</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DAG</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 1,2-diacylglycerol</bp:standardName>
+            <bp:xref rdf:resource="#UnificationXref30011"/>
+          </bp:SmallMolecule>
+        </bp:left>
+        <bp:left>
+          <bp:SmallMolecule rdf:ID="SmallMolecule30053">
+            <bp:cellularLocation rdf:resource="#CellularLocationVocabulary29993"/>
+            <bp:entityReference>
+              <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30047">
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30051">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-GALACTOSE</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30050">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2956-16-3</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30049">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGAND</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00052</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30048">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18068</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">564.289</bp:molecularWeight>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-D-galactopyranose</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine diphosphate galactose</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-D-galactose</bp:standardName>
+                <bp:structure>
+                  <bp:ChemicalStructure rdf:ID="ChemicalStructure30052">
+                    <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="UDP-GALACTOSE" title="UDP-D-galactose" dictRef="dictUDP-GALACTOSE"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="UDP-GALACTOSE-atom1" elementType="O" x2="972740.0" y2="-527590.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom2" elementType="O" x2="830030.0" y2="-279770.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom3" elementType="O" x2="595960.0" y2="-169080.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom4" elementType="O" x2="431360.0" y2="-169080.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom5" elementType="O" x2="0.0" y2="-198600.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom6" elementType="O" x2="205180.0" y2="-4640.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom7" elementType="O" x2="63150.0" y2="-86870.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom8" elementType="O" x2="753230.0" y2="0.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom9" elementType="O" x2="348560.0" y2="-86880.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom10" elementType="O" x2="932570.0" y2="-320.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom11" elementType="O" x2="596310.0" y2="-333920.0" formalCharge="-1"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom12" elementType="O" x2="431360.0" y2="-333920.0" formalCharge="-1"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom13" elementType="C" x2="1045260.0" y2="-403960.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom14" elementType="C" x2="1045260.0" y2="-320640.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom15" elementType="C" x2="63150.0" y2="-251790.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom16" elementType="C" x2="696310.0" y2="-170760.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom17" elementType="O" x2="678740.0" y2="-251290.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom18" elementType="O" x2="205160.0" y2="-251800.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom19" elementType="O" x2="840550.0" y2="-193320.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom20" elementType="O" x2="348560.0" y2="-251800.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom21" elementType="O" x2="513780.0" y2="-251500.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom22" elementType="C" x2="972970.0" y2="-445170.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom23" elementType="C" x2="901600.0" y2="-320640.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom24" elementType="C" x2="205160.0" y2="-86870.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom25" elementType="C" x2="133700.0" y2="-127990.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom26" elementType="C" x2="801460.0" y2="-67050.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom27" elementType="C" x2="277090.0" y2="-128000.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom28" elementType="C" x2="883740.0" y2="-67050.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom29" elementType="C" x2="133700.0" y2="-210680.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom30" elementType="C" x2="774840.0" y2="-145710.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom31" elementType="C" x2="277090.0" y2="-210690.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom32" elementType="C" x2="908240.0" y2="-144030.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom33" elementType="N" x2="901600.0" y2="-403960.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom34" elementType="N" x2="972660.0" y2="-278080.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom35" elementType="P" x2="596200.0" y2="-251500.0"/&gt;
+    &lt;atom id="UDP-GALACTOSE-atom36" elementType="P" x2="431360.0" y2="-251500.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="UDP-GALACTOSE-bond1" atomRefs="UDP-GALACTOSE-atom32 UDP-GALACTOSE-atom34" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond2" atomRefs="UDP-GALACTOSE-atom28 UDP-GALACTOSE-atom32" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond3" atomRefs="UDP-GALACTOSE-atom27 UDP-GALACTOSE-atom31" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond4" atomRefs="UDP-GALACTOSE-atom26 UDP-GALACTOSE-atom30" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond5" atomRefs="UDP-GALACTOSE-atom26 UDP-GALACTOSE-atom28" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond6" atomRefs="UDP-GALACTOSE-atom25 UDP-GALACTOSE-atom29" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond7" atomRefs="UDP-GALACTOSE-atom24 UDP-GALACTOSE-atom27" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond8" atomRefs="UDP-GALACTOSE-atom24 UDP-GALACTOSE-atom25" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond9" atomRefs="UDP-GALACTOSE-atom23 UDP-GALACTOSE-atom34" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond10" atomRefs="UDP-GALACTOSE-atom33 UDP-GALACTOSE-atom23" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond11" atomRefs="UDP-GALACTOSE-atom22 UDP-GALACTOSE-atom33" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond12" atomRefs="UDP-GALACTOSE-atom21 UDP-GALACTOSE-atom36" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond13" atomRefs="UDP-GALACTOSE-atom21 UDP-GALACTOSE-atom35" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond14" atomRefs="UDP-GALACTOSE-atom20 UDP-GALACTOSE-atom36" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond15" atomRefs="UDP-GALACTOSE-atom31 UDP-GALACTOSE-atom20" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond16" atomRefs="UDP-GALACTOSE-atom19 UDP-GALACTOSE-atom32" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond17" atomRefs="UDP-GALACTOSE-atom19 UDP-GALACTOSE-atom30" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond18" atomRefs="UDP-GALACTOSE-atom18 UDP-GALACTOSE-atom31" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond19" atomRefs="UDP-GALACTOSE-atom18 UDP-GALACTOSE-atom29" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond20" atomRefs="UDP-GALACTOSE-atom17 UDP-GALACTOSE-atom35" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond21" atomRefs="UDP-GALACTOSE-atom30 UDP-GALACTOSE-atom16" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond22" atomRefs="UDP-GALACTOSE-atom16 UDP-GALACTOSE-atom17" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond23" atomRefs="UDP-GALACTOSE-atom29 UDP-GALACTOSE-atom15" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond24" atomRefs="UDP-GALACTOSE-atom34 UDP-GALACTOSE-atom14" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond25" atomRefs="UDP-GALACTOSE-atom13 UDP-GALACTOSE-atom22" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond26" atomRefs="UDP-GALACTOSE-atom14 UDP-GALACTOSE-atom13" order="2"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond27" atomRefs="UDP-GALACTOSE-atom12 UDP-GALACTOSE-atom36" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond28" atomRefs="UDP-GALACTOSE-atom11 UDP-GALACTOSE-atom35" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond29" atomRefs="UDP-GALACTOSE-atom28 UDP-GALACTOSE-atom10" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond30" atomRefs="UDP-GALACTOSE-atom27 UDP-GALACTOSE-atom9" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond31" atomRefs="UDP-GALACTOSE-atom26 UDP-GALACTOSE-atom8" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond32" atomRefs="UDP-GALACTOSE-atom25 UDP-GALACTOSE-atom7" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond33" atomRefs="UDP-GALACTOSE-atom24 UDP-GALACTOSE-atom6" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond34" atomRefs="UDP-GALACTOSE-atom5 UDP-GALACTOSE-atom15" order="1"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond35" atomRefs="UDP-GALACTOSE-atom4 UDP-GALACTOSE-atom36" order="2"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond36" atomRefs="UDP-GALACTOSE-atom3 UDP-GALACTOSE-atom35" order="2"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond37" atomRefs="UDP-GALACTOSE-atom2 UDP-GALACTOSE-atom23" order="2"/&gt;
+    &lt;bond id="UDP-GALACTOSE-bond38" atomRefs="UDP-GALACTOSE-atom1 UDP-GALACTOSE-atom22" order="2"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 15 H 22 N 2 O 17 P 2" formalCharge="0"/&gt;
+   &lt;float title="molecularWeight" units="g/mol"&gt;564.289&lt;/float&gt;
+   &lt;string title="smiles"&gt;C1(=CC(=O)NC(=O)N1C3(OC(COP(=O)([O-])OP(=O)([O-])OC2(OC(CO)C(O)C(O)C(O)2))C(O)C(O)3))&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                    <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                  </bp:ChemicalStructure>
+                </bp:structure>
+              </bp:SmallMoleculeReference>
+            </bp:entityReference>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-D-galactopyranose</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine diphosphate galactose</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-D-galactose</bp:standardName>
+            <bp:xref rdf:resource="#UnificationXref30051"/>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30056">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2956-16-3</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30055">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGAND</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00052</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30054">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">18068</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:SmallMolecule>
+        </bp:left>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30111">
+            <bp:physicalEntity>
+              <bp:SmallMolecule rdf:ID="SmallMolecule30069">
+                <bp:cellularLocation rdf:resource="#CellularLocationVocabulary29993"/>
+                <bp:entityReference>
+                  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30063">
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30067">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30066">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58-98-0</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30065">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGAND</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00015</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30064">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6031</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">401.14</bp:molecularWeight>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-diphosphate</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP</bp:name>
+                    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5'-diphosphate</bp:standardName>
+                    <bp:structure>
+                      <bp:ChemicalStructure rdf:ID="ChemicalStructure30068">
+                        <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="UDP" title="uridine-5'-diphosphate" dictRef="dictUDP"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="UDP-atom1" elementType="O" x2="6925500.0" y2="-5058500.0"/&gt;
+    &lt;atom id="UDP-atom2" elementType="O" x2="5498400.0" y2="-2584900.0"/&gt;
+    &lt;atom id="UDP-atom3" elementType="O" x2="820100.0" y2="-1984200.0"/&gt;
+    &lt;atom id="UDP-atom4" elementType="O" x2="2464800.0" y2="-1984200.0"/&gt;
+    &lt;atom id="UDP-atom5" elementType="O" x2="4444200.0" y2="-1300.0"/&gt;
+    &lt;atom id="UDP-atom6" elementType="O" x2="6239700.0" y2="0.0"/&gt;
+    &lt;atom id="UDP-atom7" elementType="O" x2="0.0" y2="-1159600.0" formalCharge="-1"/&gt;
+    &lt;atom id="UDP-atom8" elementType="O" x2="820100.0" y2="-340500.0" formalCharge="-1"/&gt;
+    &lt;atom id="UDP-atom9" elementType="O" x2="2462300.0" y2="-340500.0" formalCharge="-1"/&gt;
+    &lt;atom id="UDP-atom10" elementType="C" x2="7648700.0" y2="-3825700.0"/&gt;
+    &lt;atom id="UDP-atom11" elementType="C" x2="7648700.0" y2="-2994600.0"/&gt;
+    &lt;atom id="UDP-atom12" elementType="C" x2="3899600.0" y2="-1707900.0"/&gt;
+    &lt;atom id="UDP-atom13" elementType="O" x2="3286700.0" y2="-1160500.0"/&gt;
+    &lt;atom id="UDP-atom14" elementType="O" x2="5340500.0" y2="-1929400.0"/&gt;
+    &lt;atom id="UDP-atom15" elementType="O" x2="1642000.0" y2="-1162300.0"/&gt;
+    &lt;atom id="UDP-atom16" elementType="C" x2="6927700.0" y2="-4236600.0"/&gt;
+    &lt;atom id="UDP-atom17" elementType="C" x2="6216000.0" y2="-2994600.0"/&gt;
+    &lt;atom id="UDP-atom18" elementType="C" x2="4929600.0" y2="-664500.0"/&gt;
+    &lt;atom id="UDP-atom19" elementType="C" x2="5755900.0" y2="-664500.0"/&gt;
+    &lt;atom id="UDP-atom20" elementType="C" x2="4680200.0" y2="-1450900.0"/&gt;
+    &lt;atom id="UDP-atom21" elementType="C" x2="6010100.0" y2="-1450900.0"/&gt;
+    &lt;atom id="UDP-atom22" elementType="N" x2="6216000.0" y2="-3825700.0"/&gt;
+    &lt;atom id="UDP-atom23" elementType="N" x2="6927700.0" y2="-2574600.0"/&gt;
+    &lt;atom id="UDP-atom24" elementType="P" x2="820100.0" y2="-1162300.0"/&gt;
+    &lt;atom id="UDP-atom25" elementType="P" x2="2463900.0" y2="-1162300.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="UDP-bond1" atomRefs="UDP-atom21 UDP-atom23" order="1"/&gt;
+    &lt;bond id="UDP-bond2" atomRefs="UDP-atom19 UDP-atom21" order="1"/&gt;
+    &lt;bond id="UDP-bond3" atomRefs="UDP-atom18 UDP-atom20" order="1"/&gt;
+    &lt;bond id="UDP-bond4" atomRefs="UDP-atom18 UDP-atom19" order="1"/&gt;
+    &lt;bond id="UDP-bond5" atomRefs="UDP-atom17 UDP-atom23" order="1"/&gt;
+    &lt;bond id="UDP-bond6" atomRefs="UDP-atom22 UDP-atom17" order="1"/&gt;
+    &lt;bond id="UDP-bond7" atomRefs="UDP-atom16 UDP-atom22" order="1"/&gt;
+    &lt;bond id="UDP-bond8" atomRefs="UDP-atom15 UDP-atom25" order="1"/&gt;
+    &lt;bond id="UDP-bond9" atomRefs="UDP-atom15 UDP-atom24" order="1"/&gt;
+    &lt;bond id="UDP-bond10" atomRefs="UDP-atom14 UDP-atom21" order="1"/&gt;
+    &lt;bond id="UDP-bond11" atomRefs="UDP-atom14 UDP-atom20" order="1"/&gt;
+    &lt;bond id="UDP-bond12" atomRefs="UDP-atom13 UDP-atom25" order="1"/&gt;
+    &lt;bond id="UDP-bond13" atomRefs="UDP-atom20 UDP-atom12" order="1"/&gt;
+    &lt;bond id="UDP-bond14" atomRefs="UDP-atom12 UDP-atom13" order="1"/&gt;
+    &lt;bond id="UDP-bond15" atomRefs="UDP-atom23 UDP-atom11" order="1"/&gt;
+    &lt;bond id="UDP-bond16" atomRefs="UDP-atom10 UDP-atom16" order="1"/&gt;
+    &lt;bond id="UDP-bond17" atomRefs="UDP-atom11 UDP-atom10" order="2"/&gt;
+    &lt;bond id="UDP-bond18" atomRefs="UDP-atom9 UDP-atom25" order="1"/&gt;
+    &lt;bond id="UDP-bond19" atomRefs="UDP-atom8 UDP-atom24" order="1"/&gt;
+    &lt;bond id="UDP-bond20" atomRefs="UDP-atom7 UDP-atom24" order="1"/&gt;
+    &lt;bond id="UDP-bond21" atomRefs="UDP-atom19 UDP-atom6" order="1"/&gt;
+    &lt;bond id="UDP-bond22" atomRefs="UDP-atom18 UDP-atom5" order="1"/&gt;
+    &lt;bond id="UDP-bond23" atomRefs="UDP-atom4 UDP-atom25" order="2"/&gt;
+    &lt;bond id="UDP-bond24" atomRefs="UDP-atom3 UDP-atom24" order="2"/&gt;
+    &lt;bond id="UDP-bond25" atomRefs="UDP-atom2 UDP-atom17" order="2"/&gt;
+    &lt;bond id="UDP-bond26" atomRefs="UDP-atom1 UDP-atom16" order="2"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 9 H 11 N 2 O 12 P 2" formalCharge="0"/&gt;
+   &lt;float title="molecularWeight" units="g/mol"&gt;401.14&lt;/float&gt;
+   &lt;string title="smiles"&gt;C1(=CC(=O)NC(=O)N1C2(OC(COP(=O)([O-])OP(=O)([O-])[O-])C(O)C(O)2))&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                        <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                      </bp:ChemicalStructure>
+                    </bp:structure>
+                  </bp:SmallMoleculeReference>
+                </bp:entityReference>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-diphosphate</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uridine-5'-diphosphate</bp:standardName>
+                <bp:xref rdf:resource="#UnificationXref30067"/>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30072">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAS</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">58-98-0</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30071">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGAND</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00015</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+                <bp:xref>
+                  <bp:UnificationXref rdf:ID="UnificationXref30070">
+                    <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+                    <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6031</bp:id>
+                  </bp:UnificationXref>
+                </bp:xref>
+              </bp:SmallMolecule>
+            </bp:physicalEntity>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30110">
+            <bp:physicalEntity>
+              <bp:SmallMolecule rdf:ID="SmallMolecule29998">
+                <bp:cellularLocation rdf:resource="#CellularLocationVocabulary29993"/>
+                <bp:entityReference>
+                  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference29995">
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref29996">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D-Galactosyl-12-diacyl-glycerols</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a D-galactosyldiacylglycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 3-(&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 3-&amp;beta;-D-galactosyl-1,2-diacylglycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 
+
+monogalactosyldiglyceride</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a Gal&amp;beta;1-&gt;3acyl2Gro</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mono-&amp;beta;-D-galactosyldiacylglycerol</bp:name>
+                    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a monogalactosyldiacylgycerol</bp:standardName>
+                    <bp:structure>
+                      <bp:ChemicalStructure rdf:ID="ChemicalStructure29997">
+                        <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="D-Galactosyl-12-diacyl-glycerols" title="a monogalactosyldiacylgycerol" dictRef="dictD-Galactosyl-12-diacyl-glycerols"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom1" elementType="O" x2="5628.0" y2="-6183.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom2" elementType="O" x2="2772.0" y2="-5355.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom3" elementType="O" x2="0.0" y2="-1941.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom4" elementType="O" x2="2053.0" y2="0.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom5" elementType="O" x2="632.0" y2="-823.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom6" elementType="O" x2="3488.0" y2="-823.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom7" elementType="R1" x2="6344.0" y2="-4943.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom8" elementType="C" x2="632.0" y2="-2474.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom9" elementType="C" x2="4917.0" y2="-4120.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom10" elementType="C" x2="4203.0" y2="-2883.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom11" elementType="O" x2="4917.0" y2="-4945.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom12" elementType="O" x2="3488.0" y2="-2471.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom13" elementType="O" x2="3488.0" y2="-4120.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom14" elementType="O" x2="2053.0" y2="-2474.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom15" elementType="C" x2="5631.0" y2="-5358.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom16" elementType="C" x2="3488.0" y2="-4945.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom17" elementType="C" x2="4203.0" y2="-3708.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom18" elementType="C" x2="2053.0" y2="-823.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom19" elementType="C" x2="1338.0" y2="-1234.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom20" elementType="C" x2="2773.0" y2="-1235.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom21" elementType="C" x2="1338.0" y2="-2062.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom22" elementType="C" x2="2773.0" y2="-2062.0"/&gt;
+    &lt;atom id="D-Galactosyl-12-diacyl-glycerols-atom23" elementType="R2" x2="4204.0" y2="-5356.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond1" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom20 D-Galactosyl-12-diacyl-glycerols-atom22" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond2" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom19 D-Galactosyl-12-diacyl-glycerols-atom21" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond3" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom18 D-Galactosyl-12-diacyl-glycerols-atom20" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond4" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom18 D-Galactosyl-12-diacyl-glycerols-atom19" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond5" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom14 D-Galactosyl-12-diacyl-glycerols-atom22" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond6" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom14 D-Galactosyl-12-diacyl-glycerols-atom21" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond7" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom13 D-Galactosyl-12-diacyl-glycerols-atom17" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond8" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom13 D-Galactosyl-12-diacyl-glycerols-atom16" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond9" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom22 D-Galactosyl-12-diacyl-glycerols-atom12" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond10" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom11 D-Galactosyl-12-diacyl-glycerols-atom15" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond11" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom10 D-Galactosyl-12-diacyl-glycerols-atom17" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond12" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom10 D-Galactosyl-12-diacyl-glycerols-atom12" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond13" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom9 D-Galactosyl-12-diacyl-glycerols-atom17" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond14" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom9 D-Galactosyl-12-diacyl-glycerols-atom11" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond15" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom21 D-Galactosyl-12-diacyl-glycerols-atom8" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond16" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom23 D-Galactosyl-12-diacyl-glycerols-atom16" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond17" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom7 D-Galactosyl-12-diacyl-glycerols-atom15" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond18" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom20 D-Galactosyl-12-diacyl-glycerols-atom6" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond19" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom19 D-Galactosyl-12-diacyl-glycerols-atom5" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond20" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom18 D-Galactosyl-12-diacyl-glycerols-atom4" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond21" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom3 D-Galactosyl-12-diacyl-glycerols-atom8" order="1"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond22" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom2 D-Galactosyl-12-diacyl-glycerols-atom16" order="2"/&gt;
+    &lt;bond id="D-Galactosyl-12-diacyl-glycerols-bond23" atomRefs="D-Galactosyl-12-diacyl-glycerols-atom1 D-Galactosyl-12-diacyl-glycerols-atom15" order="2"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 11 H 16 O 10 R1 1 R2 1" formalCharge="0"/&gt;
+   &lt;string title="smiles"&gt;C(O)C1(OC(OCC(COC(=O)[R1])OC(=O)[R2])C(O)C(O)C(O)1)&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                        <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                      </bp:ChemicalStructure>
+                    </bp:structure>
+                  </bp:SmallMoleculeReference>
+                </bp:entityReference>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a D-galactosyldiacylglycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 3-(&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 3-&amp;beta;-D-galactosyl-1,2-diacylglycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 
+
+monogalactosyldiglyceride</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a Gal&amp;beta;1-&gt;3acyl2Gro</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a mono-&amp;beta;-D-galactosyldiacylglycerol</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a monogalactosyldiacylgycerol</bp:standardName>
+                <bp:xref rdf:resource="#UnificationXref29996"/>
+              </bp:SmallMolecule>
+            </bp:physicalEntity>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30109">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30053"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30108">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30013"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:right rdf:resource="#SmallMolecule29998"/>
+        <bp:right rdf:resource="#SmallMolecule30069"/>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 1,2-diacylglycerol + UDP-D-galactose  =  a monogalactosyldiacylgycerol + uridine-5'-diphosphate</bp:standardName>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30107">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4.1.46-RXN</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30106">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O82730</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30105">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">P93115</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30104">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniProt</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">O81770</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref29982">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Awai K</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marechal E</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Block MA</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brun D</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masuda T</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shimada H</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Takamiya K</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ohta H</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joyard J</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11553816</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proc Natl Acad Sci U S A 2001;98(19);10960-5</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two types of MGDG synthase genes, found widely in both 16:3 and 18:3 plants, differentially mediate galactolipid syntheses in photosynthetic and nonphotosynthetic tissues in Arabidopsis thaliana.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2001</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref30103">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jarvis P</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peto CA</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lutes J</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chory J</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10869420</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proc Natl Acad Sci U S A 2000;97(14);8175-9</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactolipid deficiency and abnormal chloroplast development in the Arabidopsis MGD synthase 1 mutant.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+      </bp:BiochemicalReaction>
+    </bp:controlled>
+    <bp:controller>
+      <bp:Protein rdf:ID="Protein30131">
+        <bp:cellularLocation>
+          <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary30127">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009706</bp:term>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30128">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009706</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:CellularLocationVocabulary>
+        </bp:cellularLocation>
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, 
+respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the 
+plants are under phosphate deprivation.</bp:comment>
+        <bp:entityReference>
+          <bp:ProteinReference rdf:ID="ProteinReference30129">
+            <bp:organism>
+              <bp:BioSource rdf:ID="BioSource30028">
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis thaliana col</bp:name>
+              </bp:BioSource>
+            </bp:organism>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30130">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT4G31780-MONOMER</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:PublicationXref rdf:ID="PublicationXref29983">
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ohta H</bp:author>
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15590685</bp:id>
+                <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem 280(4);2397-400</bp:source>
+                <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Three enzyme systems for galactoglycerolipid biosynthesis are coordinately regulated in plants.</bp:title>
+                <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2005</bp:year>
+              </bp:PublicationXref>
+            </bp:xref>
+            <bp:xref rdf:resource="#PublicationXref29982"/>
+            <bp:xref rdf:resource="#PublicationXref30103"/>
+            <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, 
+respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the 
+plants are under phosphate deprivation.</bp:comment>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG synthase</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+          </bp:ProteinReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG synthase</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30130"/>
+        <bp:xref rdf:resource="#PublicationXref29983"/>
+        <bp:xref rdf:resource="#PublicationXref29982"/>
+        <bp:xref rdf:resource="#PublicationXref30103"/>
+      </bp:Protein>
+    </bp:controller>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30125">
+        <bp:evidenceCode>
+          <bp:EvidenceCodeVocabulary rdf:ID="EvidenceCodeVocabulary30078">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP-IMP-REACTION-BLOCKED</bp:term>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30079">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://brg.ai.sri.com/evidence-ontology/</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP-IMP-REACTION-BLOCKED</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:EvidenceCodeVocabulary>
+        </bp:evidenceCode>
+        <bp:xref rdf:resource="#PublicationXref30103"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30126">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-1364</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Catalysis rdf:ID="Catalysis30118">
+    <bp:controlled rdf:resource="#BiochemicalReaction30102"/>
+    <bp:controller>
+      <bp:Protein rdf:ID="Protein30123">
+        <bp:cellularLocation>
+          <bp:CellularLocationVocabulary rdf:ID="CellularLocationVocabulary30024">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009707</bp:term>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30025">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0009707</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:CellularLocationVocabulary>
+        </bp:cellularLocation>
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.</bp:comment>
+        <bp:entityReference>
+          <bp:ProteinReference rdf:ID="ProteinReference30121">
+            <bp:organism rdf:resource="#BioSource30028"/>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30122">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT5G20410-MONOMER</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref rdf:resource="#PublicationXref29983"/>
+            <bp:xref rdf:resource="#PublicationXref29982"/>
+            <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.</bp:comment>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG synthase</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+          </bp:ProteinReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG synthase</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30122"/>
+        <bp:xref rdf:resource="#PublicationXref29983"/>
+        <bp:xref rdf:resource="#PublicationXref29982"/>
+      </bp:Protein>
+    </bp:controller>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30119">
+        <bp:evidenceCode>
+          <bp:EvidenceCodeVocabulary rdf:ID="EvidenceCodeVocabulary29985">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP</bp:term>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref29986">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://brg.ai.sri.com/evidence-ontology/</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:EvidenceCodeVocabulary>
+        </bp:evidenceCode>
+        <bp:xref rdf:resource="#PublicationXref29982"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30120">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-2.4.1.46-2</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Catalysis rdf:ID="Catalysis30112">
+    <bp:controlled rdf:resource="#BiochemicalReaction30102"/>
+    <bp:controller>
+      <bp:Protein rdf:ID="Protein30117">
+        <bp:cellularLocation rdf:resource="#CellularLocationVocabulary30024"/>
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.</bp:comment>
+        <bp:entityReference>
+          <bp:ProteinReference rdf:ID="ProteinReference30115">
+            <bp:organism rdf:resource="#BioSource30028"/>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30116">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT2G11810-MONOMER</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref rdf:resource="#PublicationXref29983"/>
+            <bp:xref rdf:resource="#PublicationXref29982"/>
+            <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.</bp:comment>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG synthase</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+          </bp:ProteinReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MGDG synthase</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30116"/>
+        <bp:xref rdf:resource="#PublicationXref29983"/>
+        <bp:xref rdf:resource="#PublicationXref29982"/>
+      </bp:Protein>
+    </bp:controller>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30113">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary29985"/>
+        <bp:xref rdf:resource="#PublicationXref29982"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:DAG galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30114">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-2.4.1.46-3</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Catalysis rdf:ID="Catalysis30086">
+    <bp:cofactor>
+      <bp:SmallMolecule rdf:ID="SmallMolecule30098">
+        <bp:cellularLocation rdf:resource="#CellularLocationVocabulary30024"/>
+        <bp:entityReference>
+          <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30093">
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30096">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MG+2</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30095">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGAND</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00305</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30094">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">888</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:molecularWeight rdf:datatype="http://www.w3.org/2001/XMLSchema#float">24.305</bp:molecularWeight>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg&lt;SUP&gt;+2&lt;/SUP&gt;</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg&lt;SUP&gt;++&lt;/SUP&gt;</bp:name>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium ion</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg&lt;SUP&gt;2+&lt;/SUP&gt;</bp:standardName>
+            <bp:structure>
+              <bp:ChemicalStructure rdf:ID="ChemicalStructure30097">
+                <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="MG+2" title="Mg2+" dictRef="dictMG+2"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="MG+2-atom1" elementType="MG" x2="-999.0" y2="-999.0" formalCharge="2"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="MG 1" formalCharge="2"/&gt;
+   &lt;float title="molecularWeight" units="g/mol"&gt;24.305&lt;/float&gt;
+   &lt;string title="smiles"&gt;[Mg++]&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+              </bp:ChemicalStructure>
+            </bp:structure>
+          </bp:SmallMoleculeReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium</bp:name>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg&lt;SUP&gt;+2&lt;/SUP&gt;</bp:name>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg&lt;SUP&gt;++&lt;/SUP&gt;</bp:name>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">magnesium ion</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mg&lt;SUP&gt;2+&lt;/SUP&gt;</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30096"/>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30100">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LIGAND</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C00305</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30099">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">888</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+      </bp:SmallMolecule>
+    </bp:cofactor>
+    <bp:controlled>
+      <bp:BiochemicalReaction rdf:ID="BiochemicalReaction30042">
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diacylglycerol cannot serve as an acceptor molecule for galactosylation as in the reaction catalyzed by
+EC 2.4.1.46.  When phosphate is limiting, phospholipids in plant membranes are reduced but these
+are replaced, at least in part, by the glycolipids digalactosyldiacylglycerol (DGDG)
+and sulfoquinovosyldiacylglycerol.
+While both DGD1 and DGD2 are increased under phosphate-limiting conditions, DGD2 does not contribute
+significantly under optimal growth conditions.  DGD2 is responsible for the synthesis of DGDG molecular
+species that are rich in C16 fatty acids at sn-1 of diacylglycerol whereas DGD1 leads to molecular species
+rich in C18 fatty acids.  The enzyme has been localized to the outer side of chloroplast envelope membranes.
+
+This is DGD1-independent galactolipids biosynthesis which synthesizes extra-plastids DGDG.
+It only occurs under specific growth conditions, such as phosphate limitation.</bp:comment>
+        <bp:eCNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4.1.241</bp:eCNumber>
+        <bp:left rdf:resource="#SmallMolecule29998"/>
+        <bp:left rdf:resource="#SmallMolecule30053"/>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30073">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30069"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30062">
+            <bp:physicalEntity>
+              <bp:SmallMolecule rdf:ID="SmallMolecule30061">
+                <bp:cellularLocation rdf:resource="#CellularLocationVocabulary29993"/>
+                <bp:entityReference>
+                  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30058">
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30059">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactosyl-galactosyl-diacyl-glycerols</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a (&amp;alpha;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 3(&amp;alpha;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an &amp;alpha;-D-galactosyl-&amp;beta;-D-galactosyldiacylglycerol</bp:name>
+                    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a digalactosyldiacylglycerol</bp:standardName>
+                    <bp:structure>
+                      <bp:ChemicalStructure rdf:ID="ChemicalStructure30060">
+                        <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="Galactosyl-galactosyl-diacyl-glycerols" title="a digalactosyldiacylglycerol" dictRef="dictGalactosyl-galactosyl-diacyl-glycerols"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom1" elementType="O" x2="787300.0" y2="-127600.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom2" elementType="O" x2="856500.0" y2="-497500.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom3" elementType="O" x2="-82780.0" y2="-401870.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom4" elementType="O" x2="198300.0" y2="-384480.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom5" elementType="O" x2="93060.0" y2="-88600.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom6" elementType="O" x2="-57110.0" y2="-157110.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom7" elementType="O" x2="224240.0" y2="-159920.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom8" elementType="O" x2="572300.0" y2="-249700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom9" elementType="O" x2="428300.0" y2="-165900.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom10" elementType="R1" x2="927600.0" y2="-373600.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom11" elementType="C" x2="-74220.0" y2="-320210.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom12" elementType="C" x2="286100.0" y2="-413700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom13" elementType="C" x2="643300.0" y2="-289800.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom14" elementType="C" x2="714400.0" y2="-413700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom15" elementType="O" x2="714400.0" y2="-249700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom16" elementType="O" x2="785500.0" y2="-373600.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom17" elementType="O" x2="572300.0" y2="-413700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom18" elementType="O" x2="72210.0" y2="-332630.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom19" elementType="O" x2="428300.0" y2="-413700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom20" elementType="C" x2="714400.0" y2="-167700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom21" elementType="C" x2="856500.0" y2="-413700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom22" elementType="C" x2="643300.0" y2="-373600.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom23" elementType="C" x2="86290.0" y2="-170340.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom24" elementType="C" x2="9420.0" y2="-204410.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom25" elementType="C" x2="152530.0" y2="-219420.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom26" elementType="C" x2="501200.0" y2="-289800.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom27" elementType="C" x2="428300.0" y2="-247800.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom28" elementType="C" x2="670.0" y2="-287850.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom29" elementType="C" x2="357200.0" y2="-371800.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom30" elementType="C" x2="501200.0" y2="-371800.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom31" elementType="C" x2="357200.0" y2="-289800.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom32" elementType="R2" x2="641700.0" y2="-128700.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom33" elementType="O" x2="285550.0" y2="-248910.0"/&gt;
+    &lt;atom id="Galactosyl-galactosyl-diacyl-glycerols-atom34" elementType="C" x2="143130.0" y2="-301380.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond1" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom29 Galactosyl-galactosyl-diacyl-glycerols-atom31" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond2" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom27 Galactosyl-galactosyl-diacyl-glycerols-atom31" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond3" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom26 Galactosyl-galactosyl-diacyl-glycerols-atom30" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond4" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom26 Galactosyl-galactosyl-diacyl-glycerols-atom27" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond5" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom24 Galactosyl-galactosyl-diacyl-glycerols-atom28" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond6" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom23 Galactosyl-galactosyl-diacyl-glycerols-atom25" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond7" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom23 Galactosyl-galactosyl-diacyl-glycerols-atom24" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond8" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom19 Galactosyl-galactosyl-diacyl-glycerols-atom30" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond9" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom19 Galactosyl-galactosyl-diacyl-glycerols-atom29" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond10" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom18 Galactosyl-galactosyl-diacyl-glycerols-atom28" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond11" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom30 Galactosyl-galactosyl-diacyl-glycerols-atom17" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond12" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom17 Galactosyl-galactosyl-diacyl-glycerols-atom22" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond13" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom16 Galactosyl-galactosyl-diacyl-glycerols-atom21" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond14" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom15 Galactosyl-galactosyl-diacyl-glycerols-atom20" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond15" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom14 Galactosyl-galactosyl-diacyl-glycerols-atom22" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond16" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom14 Galactosyl-galactosyl-diacyl-glycerols-atom16" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond17" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom13 Galactosyl-galactosyl-diacyl-glycerols-atom22" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond18" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom13 Galactosyl-galactosyl-diacyl-glycerols-atom15" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond19" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom29 Galactosyl-galactosyl-diacyl-glycerols-atom12" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond20" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom28 Galactosyl-galactosyl-diacyl-glycerols-atom11" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond21" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom10 Galactosyl-galactosyl-diacyl-glycerols-atom21" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond22" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom32 Galactosyl-galactosyl-diacyl-glycerols-atom20" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond23" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom27 Galactosyl-galactosyl-diacyl-glycerols-atom9" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond24" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom26 Galactosyl-galactosyl-diacyl-glycerols-atom8" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond25" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom25 Galactosyl-galactosyl-diacyl-glycerols-atom7" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond26" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom24 Galactosyl-galactosyl-diacyl-glycerols-atom6" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond27" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom23 Galactosyl-galactosyl-diacyl-glycerols-atom5" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond28" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom4 Galactosyl-galactosyl-diacyl-glycerols-atom12" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond29" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom3 Galactosyl-galactosyl-diacyl-glycerols-atom11" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond30" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom2 Galactosyl-galactosyl-diacyl-glycerols-atom21" order="2"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond31" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom1 Galactosyl-galactosyl-diacyl-glycerols-atom20" order="2"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond32" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom31 Galactosyl-galactosyl-diacyl-glycerols-atom33" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond33" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom18 Galactosyl-galactosyl-diacyl-glycerols-atom34" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond34" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom25 Galactosyl-galactosyl-diacyl-glycerols-atom34" order="1"/&gt;
+    &lt;bond id="Galactosyl-galactosyl-diacyl-glycerols-bond35" atomRefs="Galactosyl-galactosyl-diacyl-glycerols-atom4 Galactosyl-galactosyl-diacyl-glycerols-atom34" order="1"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 17 H 26 O 15 R1 1 R2 1" formalCharge="0"/&gt;
+   &lt;string title="smiles"&gt;C(O)C2(OC(OCC1(OC(OC(COC(=O)[R2])COC(=O)[R1])C(O)C(O)C(O)1))C(O)C(O)C(O)2)&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                        <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                      </bp:ChemicalStructure>
+                    </bp:structure>
+                  </bp:SmallMoleculeReference>
+                </bp:entityReference>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a (&amp;alpha;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a 3(&amp;alpha;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an &amp;alpha;-D-galactosyl-&amp;beta;-D-galactosyldiacylglycerol</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a digalactosyldiacylglycerol</bp:standardName>
+                <bp:xref rdf:resource="#UnificationXref30059"/>
+              </bp:SmallMolecule>
+            </bp:physicalEntity>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30057">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30053"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30046">
+            <bp:physicalEntity rdf:resource="#SmallMolecule29998"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:right rdf:resource="#SmallMolecule30061"/>
+        <bp:right rdf:resource="#SmallMolecule30069"/>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a monogalactosyldiacylgycerol + UDP-D-galactose  =  a digalactosyldiacylglycerol + uridine-5'-diphosphate</bp:standardName>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30045">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RXN-1225</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref30044">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelly AA</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11696551</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem 2002;277(2);1166-73</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGD2, an arabidopsis gene encoding a UDP-galactose-dependent digalactosyldiacylglycerol synthase is expressed during growth under phosphate-limiting conditions.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2002</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref30043">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hartel H</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10973486</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Proc Natl Acad Sci U S A 2000;97(19);10649-54</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGD1-independent biosynthesis of extraplastidic galactolipids after phosphate deprivation in Arabidopsis.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+      </bp:BiochemicalReaction>
+    </bp:controlled>
+    <bp:controller>
+      <bp:Protein rdf:ID="Protein30092">
+        <bp:cellularLocation rdf:resource="#CellularLocationVocabulary30024"/>
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.</bp:comment>
+        <bp:entityReference>
+          <bp:ProteinReference rdf:ID="ProteinReference30090">
+            <bp:organism rdf:resource="#BioSource30028"/>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30091">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT4G00550-MONOMER</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref rdf:resource="#PublicationXref29983"/>
+            <bp:xref rdf:resource="#PublicationXref30043"/>
+            <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.</bp:comment>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG synthase</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:MGDG galactosyltransferase</bp:standardName>
+          </bp:ProteinReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG synthase</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:MGDG galactosyltransferase</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30091"/>
+        <bp:xref rdf:resource="#PublicationXref29983"/>
+        <bp:xref rdf:resource="#PublicationXref30043"/>
+      </bp:Protein>
+    </bp:controller>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30088">
+        <bp:evidenceCode>
+          <bp:EvidenceCodeVocabulary rdf:ID="EvidenceCodeVocabulary30017">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP-IDA-UNPURIFIED-PROTEIN</bp:term>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30018">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://brg.ai.sri.com/evidence-ontology/</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP-IDA-UNPURIFIED-PROTEIN</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:EvidenceCodeVocabulary>
+        </bp:evidenceCode>
+        <bp:xref rdf:resource="#PublicationXref30044"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30087">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary30017"/>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref30076">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kelly AA</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Froehlich JE</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">14600212</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant Cell 15(11);2694-706</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disruption of the two digalactosyldiacylglycerol synthase genes DGD1 and DGD2 in Arabidopsis reveals the existence of an additional enzyme of galactolipid synthesis.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:MGDG galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30089">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-1385</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Catalysis rdf:ID="Catalysis30074">
+    <bp:controlled rdf:resource="#BiochemicalReaction30042"/>
+    <bp:controller>
+      <bp:Protein rdf:ID="Protein30085">
+        <bp:cellularLocation rdf:resource="#CellularLocationVocabulary30024"/>
+        <bp:entityReference>
+          <bp:ProteinReference rdf:ID="ProteinReference30082">
+            <bp:organism rdf:resource="#BioSource30028"/>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30084">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AT3G11670-MONOMER</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:PublicationXref rdf:ID="PublicationXref30083">
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Froehlich JE</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">11429410</bp:id>
+                <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">J Biol Chem 2001;276(34);31806-12</bp:source>
+                <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The digalactosyldiacylglycerol (DGDG) synthase DGD1 is inserted into the outer envelope membrane of chloroplasts in a manner independent of the general import pathway and does not depend on direct interaction with monogalactosyldiacylglycerol synthase for DGDG biosynthesis.</bp:title>
+                <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2001</bp:year>
+              </bp:PublicationXref>
+            </bp:xref>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG synthase</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:MGDG galactosyltransferase</bp:standardName>
+          </bp:ProteinReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG synthase</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:MGDG galactosyltransferase</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30084"/>
+        <bp:xref rdf:resource="#PublicationXref30083"/>
+      </bp:Protein>
+    </bp:controller>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30077">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary30078"/>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref30080">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balbo I</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10381884</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Science 284(5423);2181-4</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis galactolipid biosynthesis and lipid trafficking mediated by DGD1.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1999</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30075">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary30017"/>
+        <bp:xref rdf:resource="#PublicationXref30076"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-galactose:MGDG galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30081">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-15362</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Catalysis rdf:ID="Catalysis30037">
+    <bp:controlled>
+      <bp:BiochemicalReaction rdf:ID="BiochemicalReaction30031">
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This reaction is catalyzed by enzyme DGD1 in Arabidopsis chloroplast.  It provides the predominate source of DGDG found in chloroplast membrane.</bp:comment>
+        <bp:eCNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4.1.184</bp:eCNumber>
+        <bp:left rdf:resource="#SmallMolecule29998"/>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Galactolipid:galactolipid galactosyltransferase</bp:name>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30036">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30013"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30035">
+            <bp:physicalEntity>
+              <bp:SmallMolecule rdf:ID="SmallMolecule30003">
+                <bp:cellularLocation rdf:resource="#CellularLocationVocabulary29993"/>
+                <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note, this is different from the most commonly found DGDG, the &amp;alpha;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol (|FRAME: Galactosyl-galactosyl-diacyl-glycerols|).</bp:comment>
+                <bp:entityReference>
+                  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30000">
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30001">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CPD-10363</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:xref rdf:resource="#PublicationXref29983"/>
+                    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note, this is different from the most commonly found DGDG, the &amp;alpha;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol (|FRAME: Galactosyl-galactosyl-diacyl-glycerols|).</bp:comment>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a (&amp;beta;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an &amp;beta;-D-galactosyl-&amp;beta;-D-galactosyldiacylglycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG</bp:name>
+                    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a &amp;beta;,&amp;beta; digalactosyldiacylglycerol</bp:standardName>
+                    <bp:structure>
+                      <bp:ChemicalStructure rdf:ID="ChemicalStructure30002">
+                        <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="CPD-10363" title="a beta,beta digalactosyldiacylglycerol" dictRef="dictCPD-10363"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="CPD-10363-atom1" elementType="O" x2="787330.0" y2="-127600.0"/&gt;
+    &lt;atom id="CPD-10363-atom2" elementType="O" x2="856530.0" y2="-497520.0"/&gt;
+    &lt;atom id="CPD-10363-atom3" elementType="O" x2="-82780.0" y2="-401880.0"/&gt;
+    &lt;atom id="CPD-10363-atom4" elementType="O" x2="198310.0" y2="-384490.0"/&gt;
+    &lt;atom id="CPD-10363-atom5" elementType="O" x2="93060.0" y2="-88600.0"/&gt;
+    &lt;atom id="CPD-10363-atom6" elementType="O" x2="-57110.0" y2="-157120.0"/&gt;
+    &lt;atom id="CPD-10363-atom7" elementType="O" x2="224250.0" y2="-159930.0"/&gt;
+    &lt;atom id="CPD-10363-atom8" elementType="O" x2="572320.0" y2="-249710.0"/&gt;
+    &lt;atom id="CPD-10363-atom9" elementType="O" x2="428310.0" y2="-165910.0"/&gt;
+    &lt;atom id="CPD-10363-atom10" elementType="R1" x2="927630.0" y2="-373610.0"/&gt;
+    &lt;atom id="CPD-10363-atom11" elementType="C" x2="-74220.0" y2="-320220.0"/&gt;
+    &lt;atom id="CPD-10363-atom12" elementType="C" x2="286110.0" y2="-413710.0"/&gt;
+    &lt;atom id="CPD-10363-atom13" elementType="C" x2="643320.0" y2="-289810.0"/&gt;
+    &lt;atom id="CPD-10363-atom14" elementType="C" x2="714420.0" y2="-413710.0"/&gt;
+    &lt;atom id="CPD-10363-atom15" elementType="O" x2="714420.0" y2="-249710.0"/&gt;
+    &lt;atom id="CPD-10363-atom16" elementType="O" x2="785530.0" y2="-373610.0"/&gt;
+    &lt;atom id="CPD-10363-atom17" elementType="O" x2="572320.0" y2="-413710.0"/&gt;
+    &lt;atom id="CPD-10363-atom18" elementType="O" x2="72210.0" y2="-332640.0"/&gt;
+    &lt;atom id="CPD-10363-atom19" elementType="O" x2="428310.0" y2="-413710.0"/&gt;
+    &lt;atom id="CPD-10363-atom20" elementType="C" x2="714420.0" y2="-167710.0"/&gt;
+    &lt;atom id="CPD-10363-atom21" elementType="C" x2="856530.0" y2="-413710.0"/&gt;
+    &lt;atom id="CPD-10363-atom22" elementType="C" x2="643320.0" y2="-373610.0"/&gt;
+    &lt;atom id="CPD-10363-atom23" elementType="C" x2="86290.0" y2="-170350.0"/&gt;
+    &lt;atom id="CPD-10363-atom24" elementType="C" x2="9420.0" y2="-204420.0"/&gt;
+    &lt;atom id="CPD-10363-atom25" elementType="C" x2="152540.0" y2="-219430.0"/&gt;
+    &lt;atom id="CPD-10363-atom26" elementType="C" x2="501220.0" y2="-289810.0"/&gt;
+    &lt;atom id="CPD-10363-atom27" elementType="C" x2="428310.0" y2="-247810.0"/&gt;
+    &lt;atom id="CPD-10363-atom28" elementType="C" x2="670.0" y2="-287860.0"/&gt;
+    &lt;atom id="CPD-10363-atom29" elementType="C" x2="357210.0" y2="-371810.0"/&gt;
+    &lt;atom id="CPD-10363-atom30" elementType="C" x2="501220.0" y2="-371810.0"/&gt;
+    &lt;atom id="CPD-10363-atom31" elementType="C" x2="357210.0" y2="-289810.0"/&gt;
+    &lt;atom id="CPD-10363-atom32" elementType="R2" x2="641720.0" y2="-128700.0"/&gt;
+    &lt;atom id="CPD-10363-atom33" elementType="O" x2="285560.0" y2="-248920.0"/&gt;
+    &lt;atom id="CPD-10363-atom34" elementType="C" x2="143130.0" y2="-301390.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="CPD-10363-bond1" atomRefs="CPD-10363-atom29 CPD-10363-atom31" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond2" atomRefs="CPD-10363-atom27 CPD-10363-atom31" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond3" atomRefs="CPD-10363-atom26 CPD-10363-atom30" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond4" atomRefs="CPD-10363-atom26 CPD-10363-atom27" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond5" atomRefs="CPD-10363-atom24 CPD-10363-atom28" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond6" atomRefs="CPD-10363-atom23 CPD-10363-atom25" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond7" atomRefs="CPD-10363-atom23 CPD-10363-atom24" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond8" atomRefs="CPD-10363-atom19 CPD-10363-atom30" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond9" atomRefs="CPD-10363-atom19 CPD-10363-atom29" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond10" atomRefs="CPD-10363-atom18 CPD-10363-atom28" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond11" atomRefs="CPD-10363-atom30 CPD-10363-atom17" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond12" atomRefs="CPD-10363-atom17 CPD-10363-atom22" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond13" atomRefs="CPD-10363-atom16 CPD-10363-atom21" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond14" atomRefs="CPD-10363-atom15 CPD-10363-atom20" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond15" atomRefs="CPD-10363-atom14 CPD-10363-atom22" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond16" atomRefs="CPD-10363-atom14 CPD-10363-atom16" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond17" atomRefs="CPD-10363-atom13 CPD-10363-atom22" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond18" atomRefs="CPD-10363-atom13 CPD-10363-atom15" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond19" atomRefs="CPD-10363-atom29 CPD-10363-atom12" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond20" atomRefs="CPD-10363-atom28 CPD-10363-atom11" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond21" atomRefs="CPD-10363-atom10 CPD-10363-atom21" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond22" atomRefs="CPD-10363-atom32 CPD-10363-atom20" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond23" atomRefs="CPD-10363-atom27 CPD-10363-atom9" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond24" atomRefs="CPD-10363-atom26 CPD-10363-atom8" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond25" atomRefs="CPD-10363-atom25 CPD-10363-atom7" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond26" atomRefs="CPD-10363-atom24 CPD-10363-atom6" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond27" atomRefs="CPD-10363-atom23 CPD-10363-atom5" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond28" atomRefs="CPD-10363-atom4 CPD-10363-atom12" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond29" atomRefs="CPD-10363-atom3 CPD-10363-atom11" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond30" atomRefs="CPD-10363-atom2 CPD-10363-atom21" order="2"/&gt;
+    &lt;bond id="CPD-10363-bond31" atomRefs="CPD-10363-atom1 CPD-10363-atom20" order="2"/&gt;
+    &lt;bond id="CPD-10363-bond32" atomRefs="CPD-10363-atom31 CPD-10363-atom33" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond33" atomRefs="CPD-10363-atom18 CPD-10363-atom34" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond34" atomRefs="CPD-10363-atom25 CPD-10363-atom34" order="1"/&gt;
+    &lt;bond id="CPD-10363-bond35" atomRefs="CPD-10363-atom4 CPD-10363-atom34" order="1"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 17 H 26 O 15 R1 1 R2 1" formalCharge="0"/&gt;
+   &lt;string title="smiles"&gt;C(O)C2(OC(OCC1(OC(OC(COC(=O)[R2])COC(=O)[R1])C(O)C(O)C(O)1))C(O)C(O)C(O)2)&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                        <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                      </bp:ChemicalStructure>
+                    </bp:structure>
+                  </bp:SmallMoleculeReference>
+                </bp:entityReference>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a (&amp;beta;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">an &amp;beta;-D-galactosyl-&amp;beta;-D-galactosyldiacylglycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DGDG</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a &amp;beta;,&amp;beta; digalactosyldiacylglycerol</bp:standardName>
+                <bp:xref rdf:resource="#UnificationXref30001"/>
+                <bp:xref rdf:resource="#PublicationXref29983"/>
+              </bp:SmallMolecule>
+            </bp:physicalEntity>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30034">
+            <bp:physicalEntity rdf:resource="#SmallMolecule29998"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:right rdf:resource="#SmallMolecule30003"/>
+        <bp:right rdf:resource="#SmallMolecule30013"/>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 a monogalactosyldiacylgycerol  =  a &amp;beta;,&amp;beta; digalactosyldiacylglycerol + a 1,2-diacylglycerol</bp:standardName>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref30033">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RXN-1226</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+        <bp:xref>
+          <bp:PublicationXref rdf:ID="PublicationXref30032">
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormann P</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hoffmann-Benning S</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balbo I</bp:author>
+            <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8535135</bp:id>
+            <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant Cell 1995;7(11);1801-10</bp:source>
+            <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Isolation and characterization of an Arabidopsis mutant deficient in the thylakoid lipid digalactosyl diacylglycerol.</bp:title>
+            <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1995</bp:year>
+          </bp:PublicationXref>
+        </bp:xref>
+      </bp:BiochemicalReaction>
+    </bp:controlled>
+    <bp:controller>
+      <bp:Protein rdf:ID="Protein30029">
+        <bp:cellularLocation rdf:resource="#CellularLocationVocabulary30024"/>
+        <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactolipid:galactolipid galactosyltransferase (GGGT) activity, which is not detectable under normal growth conditions, was detected in the Arabidopsis tgd1 mutant. Under certain circumstances, plants can synthesize higher galactosylated forms of galactoglycerolipids. UDP-galactose is not the galactosyl donor. The galactosyl linkages are all in beta form.</bp:comment>
+        <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGGT</bp:displayName>
+        <bp:entityReference>
+          <bp:ProteinReference rdf:ID="ProteinReference30026">
+            <bp:organism rdf:resource="#BioSource30028"/>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30027">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONOMER-14190</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+            <bp:xref>
+              <bp:PublicationXref rdf:ID="PublicationXref30019">
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xu C</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fan J</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riekhof W</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Froehlich JE</bp:author>
+                <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benning C</bp:author>
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubMed</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12743031</bp:id>
+                <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EMBO J 22(10);2370-9</bp:source>
+                <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A permease-like protein involved in ER to thylakoid lipid transfer in Arabidopsis.</bp:title>
+                <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2003</bp:year>
+              </bp:PublicationXref>
+            </bp:xref>
+            <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactolipid:galactolipid galactosyltransferase (GGGT) activity, which is not detectable under normal growth conditions, was detected in the Arabidopsis tgd1 mutant. Under certain circumstances, plants can synthesize higher galactosylated forms of galactoglycerolipids. UDP-galactose is not the galactosyl donor. The galactosyl linkages are all in beta form.</bp:comment>
+            <bp:displayName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGGT</bp:displayName>
+            <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGGT</bp:name>
+            <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactolipid:galactolipid galactosyltransferase</bp:standardName>
+          </bp:ProteinReference>
+        </bp:entityReference>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GGGT</bp:name>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactolipid:galactolipid galactosyltransferase</bp:standardName>
+        <bp:xref rdf:resource="#UnificationXref30027"/>
+        <bp:xref rdf:resource="#PublicationXref30019"/>
+      </bp:Protein>
+    </bp:controller>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30039">
+        <bp:evidenceCode>
+          <bp:EvidenceCodeVocabulary rdf:ID="EvidenceCodeVocabulary30021">
+            <bp:term rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP-IMP-REACTION-ENHANCED</bp:term>
+            <bp:xref>
+              <bp:UnificationXref rdf:ID="UnificationXref30022">
+                <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://brg.ai.sri.com/evidence-ontology/</bp:db>
+                <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV-EXP-IMP-REACTION-ENHANCED</bp:id>
+              </bp:UnificationXref>
+            </bp:xref>
+          </bp:EvidenceCodeVocabulary>
+        </bp:evidenceCode>
+        <bp:xref rdf:resource="#PublicationXref30019"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30038">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary30017"/>
+        <bp:xref rdf:resource="#PublicationXref30019"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">galactolipid:galactolipid galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30040">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-15363</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Catalysis rdf:ID="Catalysis30015">
+    <bp:controlled>
+      <bp:BiochemicalReaction rdf:ID="BiochemicalReaction29991">
+        <bp:eCNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.4.1.184</bp:eCNumber>
+        <bp:left rdf:resource="#SmallMolecule29998"/>
+        <bp:left rdf:resource="#SmallMolecule30003"/>
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;beta;,&amp;beta; digalactosyldiacylglycerol galactosyltransferase</bp:name>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30014">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30013"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30009">
+            <bp:physicalEntity>
+              <bp:SmallMolecule rdf:ID="SmallMolecule30008">
+                <bp:cellularLocation rdf:resource="#CellularLocationVocabulary29993"/>
+                <bp:entityReference>
+                  <bp:SmallMoleculeReference rdf:ID="SmallMoleculeReference30005">
+                    <bp:xref>
+                      <bp:UnificationXref rdf:ID="UnificationXref30006">
+                        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+                        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CPD-10364</bp:id>
+                      </bp:UnificationXref>
+                    </bp:xref>
+                    <bp:xref rdf:resource="#PublicationXref29983"/>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a (&amp;beta;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGDG</bp:name>
+                    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,2-Diacyl-3-O-(beta-D-galactosyl(1-&gt;6)-O-beta-D-galactosyl(1-&gt;6)-O-beta-D-galactosyl)-sn-glycerol</bp:name>
+                    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trigalactosyldiacylglycerol</bp:standardName>
+                    <bp:structure>
+                      <bp:ChemicalStructure rdf:ID="ChemicalStructure30007">
+                        <bp:structureData rdf:datatype="http://www.w3.org/2001/XMLSchema#string"> &lt;cml&gt;
+  &lt;molecule id="CPD-10364" title="a trigalactosyldiacylglycerol" dictRef="dictCPD-10364"&gt;
+   &lt;atomArray&gt;
+    &lt;atom id="CPD-10364-atom1" elementType="O" x2="787350.0" y2="-127600.0"/&gt;
+    &lt;atom id="CPD-10364-atom2" elementType="O" x2="856550.0" y2="-497530.0"/&gt;
+    &lt;atom id="CPD-10364-atom3" elementType="O" x2="-190030.0" y2="-318060.0"/&gt;
+    &lt;atom id="CPD-10364-atom4" elementType="O" x2="198310.0" y2="-384500.0"/&gt;
+    &lt;atom id="CPD-10364-atom5" elementType="O" x2="93060.0" y2="-88600.0"/&gt;
+    &lt;atom id="CPD-10364-atom6" elementType="O" x2="-57110.0" y2="-157120.0"/&gt;
+    &lt;atom id="CPD-10364-atom7" elementType="O" x2="224250.0" y2="-159930.0"/&gt;
+    &lt;atom id="CPD-10364-atom8" elementType="O" x2="572330.0" y2="-249710.0"/&gt;
+    &lt;atom id="CPD-10364-atom9" elementType="O" x2="428320.0" y2="-165910.0"/&gt;
+    &lt;atom id="CPD-10364-atom10" elementType="R1" x2="927650.0" y2="-373620.0"/&gt;
+    &lt;atom id="CPD-10364-atom11" elementType="C" x2="-74220.0" y2="-320230.0"/&gt;
+    &lt;atom id="CPD-10364-atom12" elementType="C" x2="286120.0" y2="-413720.0"/&gt;
+    &lt;atom id="CPD-10364-atom13" elementType="C" x2="643330.0" y2="-289820.0"/&gt;
+    &lt;atom id="CPD-10364-atom14" elementType="C" x2="714430.0" y2="-413720.0"/&gt;
+    &lt;atom id="CPD-10364-atom15" elementType="O" x2="714430.0" y2="-249710.0"/&gt;
+    &lt;atom id="CPD-10364-atom16" elementType="O" x2="785550.0" y2="-373620.0"/&gt;
+    &lt;atom id="CPD-10364-atom17" elementType="O" x2="572330.0" y2="-413720.0"/&gt;
+    &lt;atom id="CPD-10364-atom18" elementType="O" x2="72210.0" y2="-332650.0"/&gt;
+    &lt;atom id="CPD-10364-atom19" elementType="O" x2="428320.0" y2="-413720.0"/&gt;
+    &lt;atom id="CPD-10364-atom20" elementType="C" x2="714430.0" y2="-167710.0"/&gt;
+    &lt;atom id="CPD-10364-atom21" elementType="C" x2="856550.0" y2="-413720.0"/&gt;
+    &lt;atom id="CPD-10364-atom22" elementType="C" x2="643330.0" y2="-373620.0"/&gt;
+    &lt;atom id="CPD-10364-atom23" elementType="C" x2="86290.0" y2="-170350.0"/&gt;
+    &lt;atom id="CPD-10364-atom24" elementType="C" x2="9420.0" y2="-204420.0"/&gt;
+    &lt;atom id="CPD-10364-atom25" elementType="C" x2="152540.0" y2="-219430.0"/&gt;
+    &lt;atom id="CPD-10364-atom26" elementType="C" x2="501230.0" y2="-289820.0"/&gt;
+    &lt;atom id="CPD-10364-atom27" elementType="C" x2="428320.0" y2="-247810.0"/&gt;
+    &lt;atom id="CPD-10364-atom28" elementType="C" x2="670.0" y2="-287870.0"/&gt;
+    &lt;atom id="CPD-10364-atom29" elementType="C" x2="357220.0" y2="-371820.0"/&gt;
+    &lt;atom id="CPD-10364-atom30" elementType="C" x2="501230.0" y2="-371820.0"/&gt;
+    &lt;atom id="CPD-10364-atom31" elementType="C" x2="357220.0" y2="-289820.0"/&gt;
+    &lt;atom id="CPD-10364-atom32" elementType="R2" x2="641730.0" y2="-128700.0"/&gt;
+    &lt;atom id="CPD-10364-atom33" elementType="O" x2="285570.0" y2="-248920.0"/&gt;
+    &lt;atom id="CPD-10364-atom34" elementType="C" x2="143130.0" y2="-301400.0"/&gt;
+    &lt;atom id="CPD-10364-atom35" elementType="O" x2="-320370.0" y2="-255250.0"/&gt;
+    &lt;atom id="CPD-10364-atom36" elementType="C" x2="-391810.0" y2="-214000.0"/&gt;
+    &lt;atom id="CPD-10364-atom37" elementType="C" x2="-391810.0" y2="-131490.0"/&gt;
+    &lt;atom id="CPD-10364-atom38" elementType="C" x2="-320370.0" y2="-90240.0"/&gt;
+    &lt;atom id="CPD-10364-atom39" elementType="C" x2="-248920.0" y2="-131490.0"/&gt;
+    &lt;atom id="CPD-10364-atom40" elementType="C" x2="-248920.0" y2="-214000.0"/&gt;
+    &lt;atom id="CPD-10364-atom41" elementType="C" x2="-463260.0" y2="-255250.0"/&gt;
+    &lt;atom id="CPD-10364-atom42" elementType="O" x2="-463260.0" y2="-90250.0"/&gt;
+    &lt;atom id="CPD-10364-atom43" elementType="O" x2="-320370.0" y2="-7740.0"/&gt;
+    &lt;atom id="CPD-10364-atom44" elementType="O" x2="-177470.0" y2="-90250.0"/&gt;
+    &lt;atom id="CPD-10364-atom45" elementType="O" x2="-475030.0" y2="-333350.0"/&gt;
+   &lt;/atomArray&gt;
+   &lt;bondArray&gt;
+    &lt;bond id="CPD-10364-bond1" atomRefs="CPD-10364-atom29 CPD-10364-atom31" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond2" atomRefs="CPD-10364-atom27 CPD-10364-atom31" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond3" atomRefs="CPD-10364-atom26 CPD-10364-atom30" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond4" atomRefs="CPD-10364-atom26 CPD-10364-atom27" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond5" atomRefs="CPD-10364-atom24 CPD-10364-atom28" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond6" atomRefs="CPD-10364-atom23 CPD-10364-atom25" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond7" atomRefs="CPD-10364-atom23 CPD-10364-atom24" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond8" atomRefs="CPD-10364-atom19 CPD-10364-atom30" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond9" atomRefs="CPD-10364-atom19 CPD-10364-atom29" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond10" atomRefs="CPD-10364-atom18 CPD-10364-atom28" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond11" atomRefs="CPD-10364-atom30 CPD-10364-atom17" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond12" atomRefs="CPD-10364-atom17 CPD-10364-atom22" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond13" atomRefs="CPD-10364-atom16 CPD-10364-atom21" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond14" atomRefs="CPD-10364-atom15 CPD-10364-atom20" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond15" atomRefs="CPD-10364-atom14 CPD-10364-atom22" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond16" atomRefs="CPD-10364-atom14 CPD-10364-atom16" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond17" atomRefs="CPD-10364-atom13 CPD-10364-atom22" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond18" atomRefs="CPD-10364-atom13 CPD-10364-atom15" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond19" atomRefs="CPD-10364-atom29 CPD-10364-atom12" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond20" atomRefs="CPD-10364-atom28 CPD-10364-atom11" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond21" atomRefs="CPD-10364-atom10 CPD-10364-atom21" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond22" atomRefs="CPD-10364-atom32 CPD-10364-atom20" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond23" atomRefs="CPD-10364-atom27 CPD-10364-atom9" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond24" atomRefs="CPD-10364-atom26 CPD-10364-atom8" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond25" atomRefs="CPD-10364-atom25 CPD-10364-atom7" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond26" atomRefs="CPD-10364-atom24 CPD-10364-atom6" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond27" atomRefs="CPD-10364-atom23 CPD-10364-atom5" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond28" atomRefs="CPD-10364-atom4 CPD-10364-atom12" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond29" atomRefs="CPD-10364-atom3 CPD-10364-atom11" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond30" atomRefs="CPD-10364-atom2 CPD-10364-atom21" order="2"/&gt;
+    &lt;bond id="CPD-10364-bond31" atomRefs="CPD-10364-atom1 CPD-10364-atom20" order="2"/&gt;
+    &lt;bond id="CPD-10364-bond32" atomRefs="CPD-10364-atom31 CPD-10364-atom33" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond33" atomRefs="CPD-10364-atom18 CPD-10364-atom34" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond34" atomRefs="CPD-10364-atom25 CPD-10364-atom34" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond35" atomRefs="CPD-10364-atom4 CPD-10364-atom34" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond36" atomRefs="CPD-10364-atom35 CPD-10364-atom36" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond37" atomRefs="CPD-10364-atom36 CPD-10364-atom37" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond38" atomRefs="CPD-10364-atom37 CPD-10364-atom38" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond39" atomRefs="CPD-10364-atom38 CPD-10364-atom39" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond40" atomRefs="CPD-10364-atom39 CPD-10364-atom40" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond41" atomRefs="CPD-10364-atom35 CPD-10364-atom40" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond42" atomRefs="CPD-10364-atom40 CPD-10364-atom3" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond43" atomRefs="CPD-10364-atom36 CPD-10364-atom41" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond44" atomRefs="CPD-10364-atom37 CPD-10364-atom42" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond45" atomRefs="CPD-10364-atom38 CPD-10364-atom43" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond46" atomRefs="CPD-10364-atom39 CPD-10364-atom44" order="1"/&gt;
+    &lt;bond id="CPD-10364-bond47" atomRefs="CPD-10364-atom41 CPD-10364-atom45" order="1"/&gt;
+   &lt;/bondArray&gt;
+   &lt;formula concise="C 23 H 36 O 20 R1 1 R2 1" formalCharge="0"/&gt;
+   &lt;string title="smiles"&gt;C(OC1(OC(CO)C(O)C(O)C(O)1))C3(OC(OCC2(OC(OC(COC(=O)[R2])COC(=O)[R1])C(O)C(O)C(O)2))C(O)C(O)C(O)3)&lt;/string&gt;
+  &lt;/molecule&gt;
+ &lt;/cml&gt;
+</bp:structureData>
+                        <bp:structureFormat rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CML</bp:structureFormat>
+                      </bp:ChemicalStructure>
+                    </bp:structure>
+                  </bp:SmallMoleculeReference>
+                </bp:entityReference>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a (&amp;beta;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl-(1-&gt;6)-&amp;beta;-D-galactosyl)-1,2-diacyl-&lt;i&gt;sn&lt;/i&gt;-glycerol</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TGDG</bp:name>
+                <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,2-Diacyl-3-O-(beta-D-galactosyl(1-&gt;6)-O-beta-D-galactosyl(1-&gt;6)-O-beta-D-galactosyl)-sn-glycerol</bp:name>
+                <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a trigalactosyldiacylglycerol</bp:standardName>
+                <bp:xref rdf:resource="#UnificationXref30006"/>
+                <bp:xref rdf:resource="#PublicationXref29983"/>
+              </bp:SmallMolecule>
+            </bp:physicalEntity>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry30004">
+            <bp:physicalEntity rdf:resource="#SmallMolecule30003"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:participantStoichiometry>
+          <bp:Stoichiometry rdf:ID="Stoichiometry29999">
+            <bp:physicalEntity rdf:resource="#SmallMolecule29998"/>
+            <bp:stoichiometricCoefficient rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</bp:stoichiometricCoefficient>
+          </bp:Stoichiometry>
+        </bp:participantStoichiometry>
+        <bp:right rdf:resource="#SmallMolecule30008"/>
+        <bp:right rdf:resource="#SmallMolecule30013"/>
+        <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a monogalactosyldiacylgycerol + a &amp;beta;,&amp;beta; digalactosyldiacylglycerol  =  a trigalactosyldiacylglycerol + a 1,2-diacylglycerol</bp:standardName>
+        <bp:xref>
+          <bp:UnificationXref rdf:ID="UnificationXref29992">
+            <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+            <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RXN-9721</bp:id>
+          </bp:UnificationXref>
+        </bp:xref>
+      </bp:BiochemicalReaction>
+    </bp:controlled>
+    <bp:controller rdf:resource="#Protein30029"/>
+    <bp:controlType rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTIVATION</bp:controlType>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30020">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary30021"/>
+        <bp:xref rdf:resource="#PublicationXref30019"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence30016">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary30017"/>
+        <bp:xref rdf:resource="#PublicationXref30019"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&amp;beta;,&amp;beta; digalactosyldiacylglycerol galactosyltransferase</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref30023">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENZRXN-15364</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+  </bp:Catalysis>
+  <bp:Pathway rdf:ID="Pathway29979">
+    <bp:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&lt;B&gt;General Info &lt;/B&gt;
+Phosphoglycerides (phospholipids) are major membrane lipids found in nature which have phosphate as 
+their hydrophilic heads.  In contrast, the plant plastid (including chloroplast) membrane only has 
+phosphoglycerides as a minor constituent.  Instead, glycosylglycerides (glycolipids) are the main 
+membrane lipids, which have sugars as their hydrophilic heads. There are three important 
+glycosylglycerides: monogalactosyldiacylglycerol (MGDG), digalactosyldiacylglycerol (DGDG), and 
+sulfoquinovosyldiacylglycerol (SQDG, see |FRAME: PWYQT-4427|). Both MGDG and 
+DGDG have galactose as the sugar group and are also known as galactolipids. SQDG has sulfoquinovose as the sugar group and is thus known as sulfolipid. All these glycosylglycerides are synthesized within the chloroplast using diacylglycerol (DAG) as the substrate.  
+
+In plants, DAG and DAG-derived glycosylglycerides are classified as either prokaryotic or eukaryotic. The prokaryotic pathway uses fatty acids synthesized de novo in plastids. Because of the substrate specificity of plastid acyltransferases, the DAG pool made from the prokaryotic pathway has 16-carbon fatty acids at the sn-2 position of glycerol backbone, and 18-carbon at the sn-1 position. The C18/C16 structure is similar to that of cyanobacteria glycerolipids and is called prokaryotic. In the eukaryotic pathway, fatty acids synthesized in plastids are exported to cytosol, and are used in endoplasmic reticulum for the synthesis of DAG. Because of the substrate specificity of ER isozyme acyltransferases, the DAG pool is highly enriched with 18-carbon fatty acids at sn-1 and sn-2 positions. The C18/C18 structure is only found in eukaryotic lipids, and is thus called eukaryotic.
+
+&lt;B&gt;About this pathway &lt;/B&gt;
+In Arabidopsis, MGD1 and DGD1 are responsible for the bulk of MGDG and DGDG biosynthesis, respectively. MGD2, MGD3 and DGD2 are of conditional importance in glycolipid biosynthesis when the plants are under phosphate deprivation.  
+
+In addition to MGDG and DGDG, under certain circumstances, plants can synthesize higher galactosylated forms of galactoglycerolipids by a galactolipid:galactolipid galactosyltransferase (GGGT). The GGGT activity is not detectable in plants under normal growth conditions. Since GGGT activity also generates a DAG molecule, by providing DAG, it is postulated to be involved in remodeling of MGDG or triacylglycerol biosynthesis in extreme conditions.</bp:comment>
+    <bp:dataSource>
+      <bp:Provenance rdf:ID="Provenance29989">
+        <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc (http://biocyc.org)</bp:name>
+      </bp:Provenance>
+    </bp:dataSource>
+    <bp:evidence>
+      <bp:Evidence rdf:ID="Evidence29984">
+        <bp:evidenceCode rdf:resource="#EvidenceCodeVocabulary29985"/>
+      </bp:Evidence>
+    </bp:evidence>
+    <bp:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycosylglyceride biosynthesis</bp:name>
+    <bp:pathwayComponent rdf:resource="#Catalysis30124"/>
+    <bp:pathwayComponent rdf:resource="#Catalysis30118"/>
+    <bp:pathwayComponent rdf:resource="#Catalysis30112"/>
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction30102"/>
+    <bp:pathwayComponent rdf:resource="#Catalysis30086"/>
+    <bp:pathwayComponent rdf:resource="#Catalysis30074"/>
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction30042"/>
+    <bp:pathwayComponent rdf:resource="#Catalysis30037"/>
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction30031"/>
+    <bp:pathwayComponent rdf:resource="#BiochemicalReaction29991"/>
+    <bp:pathwayComponent rdf:resource="#Catalysis30015"/>
+    <bp:pathwayOrder>
+      <bp:BiochemicalPathwayStep rdf:ID="BiochemicalPathwayStep30101">
+        <bp:nextStep>
+          <bp:BiochemicalPathwayStep rdf:ID="BiochemicalPathwayStep29990">
+            <bp:stepConversion rdf:resource="#BiochemicalReaction29991"/>
+            <bp:stepDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:stepDirection>
+            <bp:stepProcess rdf:resource="#BiochemicalReaction29991"/>
+            <bp:stepProcess rdf:resource="#Catalysis30015"/>
+          </bp:BiochemicalPathwayStep>
+        </bp:nextStep>
+        <bp:nextStep>
+          <bp:BiochemicalPathwayStep rdf:ID="BiochemicalPathwayStep30030">
+            <bp:stepConversion rdf:resource="#BiochemicalReaction30031"/>
+            <bp:stepDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:stepDirection>
+            <bp:stepProcess rdf:resource="#BiochemicalReaction30031"/>
+            <bp:stepProcess rdf:resource="#Catalysis30037"/>
+          </bp:BiochemicalPathwayStep>
+        </bp:nextStep>
+        <bp:nextStep>
+          <bp:BiochemicalPathwayStep rdf:ID="BiochemicalPathwayStep30041">
+            <bp:stepConversion rdf:resource="#BiochemicalReaction30042"/>
+            <bp:stepDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:stepDirection>
+            <bp:stepProcess rdf:resource="#BiochemicalReaction30042"/>
+            <bp:stepProcess rdf:resource="#Catalysis30074"/>
+            <bp:stepProcess rdf:resource="#Catalysis30086"/>
+          </bp:BiochemicalPathwayStep>
+        </bp:nextStep>
+        <bp:stepConversion rdf:resource="#BiochemicalReaction30102"/>
+        <bp:stepDirection rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEFT-TO-RIGHT</bp:stepDirection>
+        <bp:stepProcess rdf:resource="#BiochemicalReaction30102"/>
+        <bp:stepProcess rdf:resource="#Catalysis30112"/>
+        <bp:stepProcess rdf:resource="#Catalysis30118"/>
+        <bp:stepProcess rdf:resource="#Catalysis30124"/>
+      </bp:BiochemicalPathwayStep>
+    </bp:pathwayOrder>
+    <bp:pathwayOrder rdf:resource="#BiochemicalPathwayStep30041"/>
+    <bp:pathwayOrder rdf:resource="#BiochemicalPathwayStep30030"/>
+    <bp:pathwayOrder rdf:resource="#BiochemicalPathwayStep29990"/>
+    <bp:standardName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">glycolipid biosynthesis</bp:standardName>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref29988">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MetaCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PWY-401</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+    <bp:xref>
+      <bp:UnificationXref rdf:ID="UnificationXref29987">
+        <bp:db rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AraCyc</bp:db>
+        <bp:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PWY-401</bp:id>
+      </bp:UnificationXref>
+    </bp:xref>
+    <bp:xref rdf:resource="#PublicationXref29983"/>
+    <bp:xref rdf:resource="#PublicationXref29982"/>
+    <bp:xref>
+      <bp:PublicationXref rdf:ID="PublicationXref29981">
+        <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Elliot M. Meyerowitz</bp:author>
+        <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chris R. Somerville</bp:author>
+        <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ISBN 0-87969-428-9, Cold Spring Harbor Laboratory Press Cold Spring Harbor, NY</bp:source>
+        <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis</bp:title>
+        <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1994</bp:year>
+      </bp:PublicationXref>
+    </bp:xref>
+    <bp:xref>
+      <bp:PublicationXref rdf:ID="PublicationXref29980">
+        <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dey, P. M.</bp:author>
+        <bp:author rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Harborne, J. B.</bp:author>
+        <bp:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Academic Press Inc.,  San Diego, USA</bp:source>
+        <bp:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plant Biochemistry</bp:title>
+        <bp:year rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1997</bp:year>
+      </bp:PublicationXref>
+    </bp:xref>
+  </bp:Pathway>
+</rdf:RDF>

@@ -21,7 +21,7 @@ public class Test extends TestCase
 		MIMShapes.registerShapes();
 	}
 	
-	private static final File EXAMPLE = new File("exemple_l3.owl"); 
+	private static final File EXAMPLE = new File("testData/exemple_l3.owl"); 
 	
 	public void testFiles()
 	{

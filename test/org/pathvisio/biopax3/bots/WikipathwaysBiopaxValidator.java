@@ -15,8 +15,8 @@ import java.util.Set;
 import javax.xml.bind.JAXBException;
 import javax.xml.rpc.ServiceException;
 
-import org.biopax.validator.BiopaxValidatorClient;
-import org.biopax.validator.BiopaxValidatorClient.RetFormat;
+import org.biopax.paxtools.client.BiopaxValidatorClient;
+import org.biopax.paxtools.client.BiopaxValidatorClient.RetFormat;
 import org.biopax.validator.jaxb.ErrorCaseType;
 import org.biopax.validator.jaxb.ErrorType;
 import org.biopax.validator.jaxb.Validation;
@@ -149,17 +149,17 @@ public class WikipathwaysBiopaxValidator
 		System.out.println ("Writing to temp file: " + tempFile);
 		                                 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
-		bpValidator.validate(
-				false, false, 
+		bpValidator.validate(false, "strict", 
 				RetFormat.XML, null, 
-				null, new File[] { tempFile }, baos);
+				null, null,  
+				new File[] { tempFile }, baos);
 		
 		String data = baos.toString("UTF-8"); // TODO: not sure about encoding
 		ValidatorResponse resp = BiopaxValidatorClient.unmarshal(data);
 		
 		results.evict(id);
 		
-		for (Validation v : resp.getValidationResult())
+		for (Validation v : resp.getValidation())
 		{
 			System.out.println (v.getDescription() + " " + v.getMaxErrors());
 			for (ErrorType e : v.getError())
