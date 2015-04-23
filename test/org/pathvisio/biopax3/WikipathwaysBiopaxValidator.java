@@ -38,7 +38,7 @@ public class WikipathwaysBiopaxValidator
 	private void run() throws ConverterException, ServiceException, IOException, JAXBException
 	{
 		//WP157: glycolysis M. musculus
-		checkPathway ("WP157");
+		checkPathway ("WP23");
 	}
 
 	final WikiPathwaysClient client;

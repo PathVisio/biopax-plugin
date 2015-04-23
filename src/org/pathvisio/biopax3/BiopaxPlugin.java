@@ -1,6 +1,6 @@
 // PathVisio,
 // a tool for data visualization and analysis using Biological Pathways
-// Copyright 2006-2009 BiGCaT Bioinformatics
+// Copyright 2006-2015 BiGCaT Bioinformatics
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); 
 // you may not use this file except in compliance with the License. 
@@ -27,6 +27,7 @@ import org.pathvisio.desktop.plugin.Plugin;
  * convert the pathway entities to GPML pathways.
  * The resulting pathways will be saved as a GPML file in 
  * the working directory.
+ * 
  * @author adem
  */
 public class BiopaxPlugin implements Plugin 

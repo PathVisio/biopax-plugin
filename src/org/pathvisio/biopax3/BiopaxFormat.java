@@ -1,6 +1,6 @@
 // PathVisio,
 // a tool for data visualization and analysis using Biological Pathways
-// Copyright 2006-2009 BiGCaT Bioinformatics
+// Copyright 2006-2015 BiGCaT Bioinformatics
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); 
 // you may not use this file except in compliance with the License. 
@@ -26,6 +26,13 @@ import org.pathvisio.core.model.AbstractPathwayFormat;
 import org.pathvisio.core.model.ConverterException;
 import org.pathvisio.core.model.Pathway;
 
+/**
+ * 
+ * PathVisio Pathway Format for BioPAX
+ * Registers exporter and importer
+ * @author martijn 
+ *
+ */
 public class BiopaxFormat extends AbstractPathwayFormat
 {
 	public void doExport(File file, Pathway pathway)
@@ -51,13 +58,13 @@ public class BiopaxFormat extends AbstractPathwayFormat
 		return "BioPAX Level 3";
 	}
 
-	public Pathway doImport(File file)
-	throws ConverterException 
+	public Pathway doImport(File file) throws ConverterException 
 	{
 		Pathway result = null;
+		System.out.println("IMPORT!!");
 		try {
 			ImportHelper bpf = new ImportHelper(file);
-
+			System.out.println(bpf);
 
 			/*
 			List<org.biopax.paxtools.model.level3.Pathway> pathway_list = bpf.getPathways(); 

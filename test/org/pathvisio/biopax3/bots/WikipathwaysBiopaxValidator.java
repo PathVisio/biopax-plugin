@@ -17,13 +17,16 @@ import javax.xml.rpc.ServiceException;
 
 import org.biopax.paxtools.client.BiopaxValidatorClient;
 import org.biopax.paxtools.client.BiopaxValidatorClient.RetFormat;
+import org.biopax.validator.jaxb.Behavior;
 import org.biopax.validator.jaxb.ErrorCaseType;
 import org.biopax.validator.jaxb.ErrorType;
 import org.biopax.validator.jaxb.Validation;
 import org.biopax.validator.jaxb.ValidatorResponse;
+import org.bridgedb.bio.Organism;
 import org.pathvisio.biopax3.BiopaxFormat;
 import org.pathvisio.core.model.ConverterException;
 import org.pathvisio.core.model.Pathway;
+import org.pathvisio.wikipathways.webservice.WSCurationTag;
 import org.pathvisio.wikipathways.webservice.WSPathway;
 import org.pathvisio.wikipathways.webservice.WSPathwayInfo;
 import org.wikipathways.client.WikiPathwaysClient;
@@ -56,13 +59,20 @@ public class WikipathwaysBiopaxValidator
 	private Set<String> getAllIds() throws RemoteException
 	{
 		Set<String> result = new HashSet<String>();
-		for (WSPathwayInfo info : client.listPathways())
+		for (WSPathwayInfo info : client.listPathways(Organism.HomoSapiens))
 		{
-			// Do only human for now
-			if (!"Homo sapiens".equals(info.getSpecies())) continue;
-			
-			result.add(info.getId());
+			// only use human for now
+			if ("Homo sapiens".equals(info.getSpecies())) {
+				WSCurationTag [] tags = client.getCurationTags(info.getId());
+				for(WSCurationTag tag : tags) {
+					if(tag.getName().equals("Curation:AnalysisCollection")) {
+						System.out.println(info.getId());
+						result.add(info.getId());
+					}
+				}
+			}
 		}
+		System.out.println(result.size());
 		return result;
 	}
 
@@ -76,21 +86,22 @@ public class WikipathwaysBiopaxValidator
 		return result;
 	}
 	
-	private void writeReport() throws IOException
+	private void writeReport(long date) throws IOException
 	{
-		FileOutputStream str = new FileOutputStream (new File ("biopaxreport.html"));
+		FileOutputStream str = new FileOutputStream (new File ("biopaxreport_" + date + ".html"));
 		results.printHtmlOverview(new PrintStream(str));
 		str.close();
 	}
 	
 	private void run() throws ConverterException, ServiceException, IOException, JAXBException
 	{
-		File resultsStoreFile = new File ("validator.objectstore");
+		Date now = new Date(); // store date before start of run, to account for changes during the run.
+		File resultsStoreFile = new File ("validator.objectstore_" + now.getTime());
 		results = ValidationResultSet.readOrCreate(resultsStoreFile);
 
 		try
 		{
-			Date now = new Date(); // store date before start of run, to account for changes during the run.
+//			Date now = new Date(); // store date before start of run, to account for changes during the run.
 			Date lastChangeDate = results.previousRunDate;
 			
 			
@@ -112,7 +123,7 @@ public class WikipathwaysBiopaxValidator
 			{
 				checkPathway (id);
 				results.store(resultsStoreFile);
-				writeReport();
+				writeReport(now.getTime());
 			}
 	
 			results.previousRunDate = now;
@@ -121,7 +132,7 @@ public class WikipathwaysBiopaxValidator
 		}
 		finally
 		{
-			writeReport();
+			writeReport(now.getTime());
 		}
 	}
 
@@ -143,14 +154,15 @@ public class WikipathwaysBiopaxValidator
 		WSPathway wpwy = client.getPathway(id);
 		Pathway pwy = WikiPathwaysClient.toPathway(wpwy);
 		
-		File tempFile = File.createTempFile("biopaxTest.", ".owl");
+//		File tempFile = File.createTempFile("biopaxTest.", ".owl");
+		File tempFile = new File("output/biopaxText_" + id + ".owl");
 		format.doExport(tempFile, pwy);
 		
 		System.out.println ("Writing to temp file: " + tempFile);
 		                                 
 		ByteArrayOutputStream baos = new ByteArrayOutputStream();
 		bpValidator.validate(false, "strict", 
-				RetFormat.XML, null, 
+				RetFormat.XML, Behavior.ERROR, 
 				null, null,  
 				new File[] { tempFile }, baos);
 		

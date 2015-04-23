@@ -1,6 +1,6 @@
 // PathVisio,
 // a tool for data visualization and analysis using Biological Pathways
-// Copyright 2006-2009 BiGCaT Bioinformatics
+// Copyright 2006-2015 BiGCaT Bioinformatics
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); 
 // you may not use this file except in compliance with the License. 
@@ -64,52 +64,18 @@ import org.pathvisio.core.model.PathwayElement.MAnchor;
 import org.pathvisio.core.model.PathwayElement.MPoint;
 import org.pathvisio.core.util.FileUtils;
 
+/**
+ * 
+ * Exports a PathVisio PathVisio in BioPAX format using the
+ * Paxtools library
+ * 
+ * @author adem
+ * @author martijn
+ * @author mkutmon
+ *
+ */
 public class ExportHelper
 {
-	static void transferComments (Entity bpE, PathwayElement pwElm)
-	{
-		Set<String> comments = new HashSet<String>();
-		for (Comment com : pwElm.getComments()){
-			comments.add(com.toString());
-		}
-		for (String c : comments)
-		{
-			((Level3Element)bpE).addComment(c);
-		}
-	}
-
-	/**
-	 * transfer Publication Xrefs attached to a pathway element to an 
-	 * biopax entity.
-	 */
-	void transferPublicationXref(Entity bpE, PathwayElement pwElm)
-	{
-		for (org.pathvisio.core.biopax.PublicationXref pvPub : pwElm.getBiopaxReferenceManager().getPublicationXRefs())
-		{
-			String id = pvPub.getId();
-			PublicationXref bpPub = null;
-			if (bpModel.getByID(id) == null)
-			{
-				bpPub = bpModel.addNew(PublicationXref.class, id);
-				
-				for (String author : pvPub.getAuthors()) bpPub.addAuthor(author);
-				bpPub.addSource(pvPub.getSource());
-				try
-				{
-					bpPub.setYear(Integer.parseInt(pvPub.getYear()));
-				}
-				catch (NumberFormatException ex) { /* ignore, not a valid year */ }
-				bpPub.setId(pvPub.getPubmedId());
-				bpPub.setDb("PubMed");
-				bpPub.setTitle(pvPub.getTitle());
-			}
-			else
-			{
-				bpPub = (org.biopax.paxtools.model.level3.PublicationXref)bpModel.getByID(id);
-			}			
-			bpE.addXref(bpPub);
-		}
-	}
 
 	private BioPAXFactory factory;
 	private Model bpModel;
@@ -185,7 +151,22 @@ public class ExportHelper
 		}
 		else
 		{
-			bpEr = uniqueEntityRef.get (key);
+			bpEr = uniqueEntityRef.get(key);
+			
+			// it could be that the same identifier is used for a PROTEIN
+			// and a RNA -> then a wrong Reference is returned.
+			if (bpPe instanceof SmallMolecule && !(bpEr instanceof SmallMoleculeReference)) {
+				bpEr = bpModel.addNew(SmallMoleculeReference.class, generateRdfId());
+				// must set to unknown, default is 0.0 which makes no sense...
+				((SmallMoleculeReference)bpEr).setMolecularWeight(Entity.UNKNOWN_FLOAT);
+			}
+			if(bpPe instanceof Protein && !(bpEr instanceof ProteinReference)) {
+				bpEr = bpModel.addNew(ProteinReference.class, generateRdfId());
+				if (organism != null) ((ProteinReference)bpEr).setOrganism(organism);
+			}
+			if(bpPe instanceof Rna && !(bpEr instanceof RnaReference)) {
+				bpEr = bpModel.addNew(RnaReference.class, generateRdfId());
+			}
 		}
 
 		bpEr.setDisplayName(pwyElt.getTextLabel().replace("\n", ""));
@@ -292,7 +273,6 @@ public class ExportHelper
 	 */
 	String getMiriamName (DataSource ds)
 	{
-		System.out.println (ds.getFullName());
 		if (miriamNameOverrides.containsKey(ds)) 
 			return miriamNameOverrides.get(ds);
 		else 
@@ -370,6 +350,7 @@ public class ExportHelper
 			bpPe = bpModel.addNew(Protein.class, pwyElt.getGraphId());
 			break;
 		case RNA:
+			System.out.println("generate Rna class for " + pwyElt.getGraphId());
 			bpPe = bpModel.addNew(Rna.class, pwyElt.getGraphId());
 			break;
 		case GENE:
@@ -551,7 +532,7 @@ public class ExportHelper
 	}
 
 	// Test if a line is a relation
-	static boolean isRelation(Pathway pv, PathwayElement pe) {
+	private static boolean isRelation(Pathway pv, PathwayElement pe) {
 		if(pe.getObjectType() == ObjectType.LINE) {
 			System.out.println(" LINE ");
 			MPoint s = pe.getMStart();
@@ -568,6 +549,52 @@ public class ExportHelper
 		}
 		return false;
 	}
+	
+	private static void transferComments (Entity bpE, PathwayElement pwElm)
+	{
+		Set<String> comments = new HashSet<String>();
+		for (Comment com : pwElm.getComments()){
+			comments.add(com.toString());
+		}
+		for (String c : comments)
+		{
+			((Level3Element)bpE).addComment(c);
+		}
+	}
+
+	/**
+	 * transfer Publication Xrefs attached to a pathway element to an 
+	 * biopax entity.
+	 */
+	private void transferPublicationXref(Entity bpE, PathwayElement pwElm)
+	{
+		for (org.pathvisio.core.biopax.PublicationXref pvPub : pwElm.getBiopaxReferenceManager().getPublicationXRefs())
+		{
+			String id = pvPub.getId();
+			PublicationXref bpPub = null;
+			if (bpModel.getByID(id) == null)
+			{
+				bpPub = bpModel.addNew(PublicationXref.class, id);
+				
+				for (String author : pvPub.getAuthors()) bpPub.addAuthor(author);
+				bpPub.addSource(pvPub.getSource());
+				try
+				{
+					bpPub.setYear(Integer.parseInt(pvPub.getYear()));
+				}
+				catch (NumberFormatException ex) { /* ignore, not a valid year */ }
+				bpPub.setId(pvPub.getPubmedId());
+				bpPub.setDb("PubMed");
+				bpPub.setTitle(pvPub.getTitle());
+			}
+			else
+			{
+				bpPub = (org.biopax.paxtools.model.level3.PublicationXref)bpModel.getByID(id);
+			}			
+			bpE.addXref(bpPub);
+		}
+	}
+	
 
 	/**
 	 * The Relation class test each line and define the inputs, the outputs and

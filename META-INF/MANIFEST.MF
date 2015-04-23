@@ -16,7 +16,7 @@ Require-Bundle: org.pathvisio.core;bundle-version="3.0.0",
  org.bridgedb.bio;bundle-version="1.1.0",
  javax.xml.rpc;bundle-version="1.1.0";resolution:=optional,
  org.junit;bundle-version="4.10.0";resolution:=optional,
- com.google.collect;bundle-version="1.0.0",
- nl.helixsoft.xml;bundle-version="1.0.0",
- org.wikipathways.client.bundle;bundle-version="3.2.0"
+ com.google.collect;bundle-version="1.0.0";resolution:=optional,
+ nl.helixsoft.xml;bundle-version="1.0.0";resolution:=optional,
+ org.wikipathways.client.bundle;bundle-version="3.2.0";resolution:=optional
 Import-Package: org.osgi.framework;version="1.5.0"

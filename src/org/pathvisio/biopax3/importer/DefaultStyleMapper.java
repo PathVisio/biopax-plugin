@@ -1,6 +1,6 @@
 // PathVisio,
 // a tool for data visualization and analysis using Biological Pathways
-// Copyright 2006-2009 BiGCaT Bioinformatics
+// Copyright 2006-2015 BiGCaT Bioinformatics
 //
 // Licensed under the Apache License, Version 2.0 (the "License"); 
 // you may not use this file except in compliance with the License. 
@@ -33,6 +33,11 @@ import org.pathvisio.core.model.LineType;
 import org.pathvisio.core.model.ObjectType;
 import org.pathvisio.core.model.PathwayElement;
 
+/**
+ * Default style mapper for BioPAX to PathVisio pathway
+ * @author adem
+ *
+ */
 public class DefaultStyleMapper implements StyleMapper {
 	
 	public void mapControl(Control c, PathwayElement line) {
